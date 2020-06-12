@@ -75,7 +75,7 @@ def run(args):
     ep = 0
     ep_max = args.cam_num_epoches
    
-    
+    print(args.early_stopping)
     
     while(ep < ep_max and (args.early_stopping is not True or (new_validation_loss < old_validation_loss and args.early_stopping is True) or ep==0)):
 
@@ -110,8 +110,7 @@ def run(args):
             new_validation_loss = validate(model, val_data_loader)
             timer.reset_stage()
             
-        ep += 1
-       
+        ep += 1     
         
         
     if(args.early_stopping == True and ep < ep_max):
