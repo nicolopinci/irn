@@ -79,8 +79,7 @@ def run(args):
     
     while(ep < ep_max and (args.early_stopping is not True or (new_validation_loss < old_validation_loss and args.early_stopping is True) or ep==0)):
 
-        if(args.early_stopping == True):
-            old_validation_loss = new_validation_loss
+        old_validation_loss = new_validation_loss
         
         print('Epoch %d/%d' % (ep+1, args.cam_num_epoches))
 
