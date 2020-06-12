@@ -71,6 +71,11 @@ if __name__ == '__main__':
     parser.add_argument("--make_sem_seg_pass", default=True)
     parser.add_argument("--eval_sem_seg_pass", default=True)
 
+    
+    #Early stopping
+    parser.add_argument("--early_stopping", default=True)
+    
+    
     args = parser.parse_args()
 
     os.makedirs("sess", exist_ok=True)

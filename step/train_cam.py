@@ -31,9 +31,11 @@ def validate(model, data_loader):
 
     model.train()
 
-    print('loss: %.4f' % (val_loss_meter.pop('loss1')))
+    validation_loss = (val_loss_meter.pop('loss1'))
+    
+    print('loss: %.4f' % validation_loss)
 
-    return
+    return validation_loss
 
 
 def run(args):
@@ -58,6 +60,7 @@ def run(args):
         {'params': param_groups[0], 'lr': args.cam_learning_rate, 'weight_decay': args.cam_weight_decay},
         {'params': param_groups[1], 'lr': 10*args.cam_learning_rate, 'weight_decay': args.cam_weight_decay},
     ], lr=args.cam_learning_rate, weight_decay=args.cam_weight_decay, max_step=max_step)
+    
 
     model = torch.nn.DataParallel(model).cuda()
     model.train()
@@ -65,9 +68,20 @@ def run(args):
     avg_meter = pyutils.AverageMeter()
 
     timer = pyutils.Timer()
+    
+    new_validation_loss = float('inf')
+    old_validation_loss = float('inf')
+    
+    ep = 0
+    ep_max = args.cam_num_epoches
+   
+    
+    
+    while(ep < ep_max and (args.early_stopping is not True or (new_validation_loss < old_validation_loss and args.early_stopping is True) or ep==0)):
 
-    for ep in range(args.cam_num_epoches):
-
+        if(args.early_stopping == True):
+            old_validation_loss = new_validation_loss
+        
         print('Epoch %d/%d' % (ep+1, args.cam_num_epoches))
 
         for step, pack in enumerate(train_data_loader):
@@ -94,8 +108,16 @@ def run(args):
                       'etc:%s' % (timer.str_estimated_complete()), flush=True)
 
         else:
-            validate(model, val_data_loader)
+            new_validation_loss = validate(model, val_data_loader)
             timer.reset_stage()
+            
+        ep += 1
+       
+        
+        
+    if(args.early_stopping == True and ep < ep_max):
+        print("Early stopping activated")
+        
 
     torch.save(model.module.state_dict(), args.cam_weights_name + '.pth')
     torch.cuda.empty_cache()
