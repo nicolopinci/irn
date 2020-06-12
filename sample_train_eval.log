@@ -1,0 +1,52 @@
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 5, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'early_stopping': 'False'}
+step.train_cam: Fri Jun 12 10:36:39 2020
+Epoch 1/5
+step:    0/ 3305 loss:0.6749 imps:4.2 lr: 0.1000 etc:Fri Jun 12 14:07:57 2020
+step:  100/ 3305 loss:0.1834 imps:68.6 lr: 0.0973 etc:Fri Jun 12 10:49:37 2020
+step:  200/ 3305 loss:0.1128 imps:74.1 lr: 0.0945 etc:Fri Jun 12 10:48:39 2020
+step:  300/ 3305 loss:0.0977 imps:76.0 lr: 0.0918 etc:Fri Jun 12 10:48:22 2020
+step:  400/ 3305 loss:0.0925 imps:76.8 lr: 0.0890 etc:Fri Jun 12 10:48:14 2020
+step:  500/ 3305 loss:0.0862 imps:77.3 lr: 0.0863 etc:Fri Jun 12 10:48:10 2020
+step:  600/ 3305 loss:0.0817 imps:77.7 lr: 0.0835 etc:Fri Jun 12 10:48:07 2020
+validating ... loss: 0.0759
+Epoch 2/5
+step:  700/ 3305 loss:0.0744 imps:67.3 lr: 0.0807 etc:Fri Jun 12 10:49:04 2020
+step:  800/ 3305 loss:0.0682 imps:75.4 lr: 0.0779 etc:Fri Jun 12 10:48:55 2020
+step:  900/ 3305 loss:0.0684 imps:76.8 lr: 0.0751 etc:Fri Jun 12 10:48:48 2020
+step: 1000/ 3305 loss:0.0723 imps:77.5 lr: 0.0723 etc:Fri Jun 12 10:48:43 2020
+step: 1100/ 3305 loss:0.0706 imps:77.8 lr: 0.0695 etc:Fri Jun 12 10:48:39 2020
+step: 1200/ 3305 loss:0.0685 imps:78.0 lr: 0.0666 etc:Fri Jun 12 10:48:35 2020
+step: 1300/ 3305 loss:0.0648 imps:78.2 lr: 0.0638 etc:Fri Jun 12 10:48:32 2020
+validating ... loss: 0.0572
+Epoch 3/5
+step: 1400/ 3305 loss:0.0583 imps:72.7 lr: 0.0609 etc:Fri Jun 12 10:48:59 2020
+step: 1500/ 3305 loss:0.0576 imps:76.0 lr: 0.0580 etc:Fri Jun 12 10:48:55 2020
+step: 1600/ 3305 loss:0.0605 imps:77.0 lr: 0.0551 etc:Fri Jun 12 10:48:51 2020
+step: 1700/ 3305 loss:0.0554 imps:77.5 lr: 0.0522 etc:Fri Jun 12 10:48:48 2020
+step: 1800/ 3305 loss:0.0574 imps:77.8 lr: 0.0493 etc:Fri Jun 12 10:48:45 2020
+step: 1900/ 3305 loss:0.0576 imps:78.0 lr: 0.0463 etc:Fri Jun 12 10:48:42 2020
+validating ... loss: 0.0569
+Epoch 4/5
+step: 2000/ 3305 loss:0.0538 imps:56.1 lr: 0.0433 etc:Fri Jun 12 10:49:01 2020
+step: 2100/ 3305 loss:0.0449 imps:74.2 lr: 0.0403 etc:Fri Jun 12 10:48:58 2020
+step: 2200/ 3305 loss:0.0488 imps:76.2 lr: 0.0373 etc:Fri Jun 12 10:48:55 2020
+step: 2300/ 3305 loss:0.0460 imps:77.0 lr: 0.0343 etc:Fri Jun 12 10:48:53 2020
+step: 2400/ 3305 loss:0.0476 imps:77.4 lr: 0.0312 etc:Fri Jun 12 10:48:50 2020
+step: 2500/ 3305 loss:0.0469 imps:77.7 lr: 0.0281 etc:Fri Jun 12 10:48:48 2020
+step: 2600/ 3305 loss:0.0478 imps:77.9 lr: 0.0249 etc:Fri Jun 12 10:48:46 2020
+validating ... loss: 0.0522
+Epoch 5/5
+step: 2700/ 3305 loss:0.0445 imps:71.2 lr: 0.0217 etc:Fri Jun 12 10:48:59 2020
+step: 2800/ 3305 loss:0.0415 imps:75.8 lr: 0.0184 etc:Fri Jun 12 10:48:57 2020
+step: 2900/ 3305 loss:0.0406 imps:77.0 lr: 0.0151 etc:Fri Jun 12 10:48:55 2020
+step: 3000/ 3305 loss:0.0387 imps:77.4 lr: 0.0117 etc:Fri Jun 12 10:48:53 2020
+step: 3100/ 3305 loss:0.0382 imps:77.8 lr: 0.0082 etc:Fri Jun 12 10:48:51 2020
+step: 3200/ 3305 loss:0.0369 imps:77.9 lr: 0.0045 etc:Fri Jun 12 10:48:50 2020
+step: 3300/ 3305 loss:0.0363 imps:78.1 lr: 0.0003 etc:Fri Jun 12 10:48:48 2020
+validating ... loss: 0.0502
+step.make_cam: Fri Jun 12 10:48:59 2020
+[ ]
+step.eval_cam: Fri Jun 12 11:01:21 2020
