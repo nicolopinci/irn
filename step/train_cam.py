@@ -1,4 +1,3 @@
-
 import torch
 from torch.backends import cudnn
 cudnn.enabled = True
@@ -71,12 +70,15 @@ def run(args):
     
     new_validation_loss = float('inf')
     old_validation_loss = float('inf')
+    optimal_validation_loss = float('inf')
+    
+    early_stop_now = False
     
     ep = 0
     ep_max = args.cam_num_epoches
    
 
-    while(ep < ep_max and (args.early_stopping is not True or (new_validation_loss < old_validation_loss and args.early_stopping is True) or ep==0)):
+    while(ep < ep_max and early_stop_now is False):
 
         old_validation_loss = new_validation_loss
         
@@ -108,13 +110,28 @@ def run(args):
         else:
             new_validation_loss = validate(model, val_data_loader)
             timer.reset_stage()
+        
+        if(new_validation_loss < optimal_validation_loss):
+            optimal_validation_loss = new_validation_loss
             
-        ep += 1     
+        GL_value = calculateGL(optimal_validation_loss, new_validation_loss)
+        
+        print('GL:%.1f' % GL_value)
+        
+        if(GL_value > args.stopping_threshold):
+            early_stop_now = True       
+            
+        ep += 1 
         
         
-    if(args.early_stopping == True and ep < ep_max):
+        
+    if(early_stop_now == True and ep < ep_max):
         print("Early stopping activated")
         
 
     torch.save(model.module.state_dict(), args.cam_weights_name + '.pth')
     torch.cuda.empty_cache()
+    
+    
+def calculateGL(Eopt, Eva):
+    return 100*(Eva/Eopt - 1)

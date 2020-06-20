@@ -289,3 +289,212 @@ step:  800/66100 loss:0.0733 imps:75.3 lr: 0.0989 etc:Fri Jun 12 15:57:38 2020
 step:  900/66100 loss:0.0790 imps:76.7 lr: 0.0988 etc:Fri Jun 12 15:55:13 2020
 step: 1000/66100 loss:0.0774 imps:77.3 lr: 0.0986 etc:Fri Jun 12 15:53:20 2020
 step: 1100/66100 loss:0.0825 imps:77.6 lr: 0.0985 etc:Fri Jun 12 15:51:48 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 100, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'early_stopping': True}
+step.train_cam: Fri Jun 12 12:12:40 2020
+True
+Epoch 1/100
+step:    0/66100 loss:0.7015 imps:4.3 lr: 0.1000 etc:Mon Jun 15 08:45:27 2020
+step:  100/66100 loss:0.1844 imps:67.4 lr: 0.0999 etc:Fri Jun 12 16:34:11 2020
+step:  200/66100 loss:0.1179 imps:72.6 lr: 0.0997 etc:Fri Jun 12 16:15:36 2020
+step:  300/66100 loss:0.0969 imps:74.6 lr: 0.0996 etc:Fri Jun 12 16:09:08 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 10, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'early_stopping': True}
+step.train_cam: Fri Jun 12 12:14:01 2020
+Epoch 1/10
+step:    0/ 6610 loss:0.6945 imps:4.2 lr: 0.1000 etc:Fri Jun 12 19:16:05 2020
+step:  100/ 6610 loss:0.1903 imps:67.1 lr: 0.0986 etc:Fri Jun 12 12:40:20 2020
+step:  200/ 6610 loss:0.1153 imps:72.4 lr: 0.0973 etc:Fri Jun 12 12:38:24 2020
+step:  300/ 6610 loss:0.0988 imps:74.4 lr: 0.0959 etc:Fri Jun 12 12:37:45 2020
+step:  400/ 6610 loss:0.0914 imps:75.4 lr: 0.0945 etc:Fri Jun 12 12:37:26 2020
+step:  500/ 6610 loss:0.0862 imps:76.1 lr: 0.0932 etc:Fri Jun 12 12:37:14 2020
+step:  600/ 6610 loss:0.0828 imps:76.5 lr: 0.0918 etc:Fri Jun 12 12:37:06 2020
+validating ... loss: 0.0719
+Epoch 2/10
+step:  700/ 6610 loss:0.0811 imps:66.9 lr: 0.0904 etc:Fri Jun 12 12:38:59 2020
+step:  800/ 6610 loss:0.0795 imps:75.0 lr: 0.0890 etc:Fri Jun 12 12:38:40 2020
+step:  900/ 6610 loss:0.0731 imps:76.5 lr: 0.0877 etc:Fri Jun 12 12:38:25 2020
+step: 1000/ 6610 loss:0.0708 imps:77.1 lr: 0.0863 etc:Fri Jun 12 12:38:14 2020
+step: 1100/ 6610 loss:0.0685 imps:77.5 lr: 0.0849 etc:Fri Jun 12 12:38:04 2020
+step: 1200/ 6610 loss:0.0703 imps:77.7 lr: 0.0835 etc:Fri Jun 12 12:37:56 2020
+step: 1300/ 6610 loss:0.0684 imps:77.9 lr: 0.0821 etc:Fri Jun 12 12:37:49 2020
+validating ... loss: 0.0651
+Epoch 3/10
+step: 1400/ 6610 loss:0.0636 imps:72.8 lr: 0.0807 etc:Fri Jun 12 12:38:41 2020
+step: 1500/ 6610 loss:0.0666 imps:76.0 lr: 0.0793 etc:Fri Jun 12 12:38:32 2020
+step: 1600/ 6610 loss:0.0619 imps:76.9 lr: 0.0779 etc:Fri Jun 12 12:38:25 2020
+step: 1700/ 6610 loss:0.0628 imps:77.4 lr: 0.0765 etc:Fri Jun 12 12:38:18 2020
+step: 1800/ 6610 loss:0.0635 imps:77.7 lr: 0.0751 etc:Fri Jun 12 12:38:11 2020
+step: 1900/ 6610 loss:0.0591 imps:77.9 lr: 0.0737 etc:Fri Jun 12 12:38:06 2020
+validating ... loss: 0.0590
+Epoch 4/10
+step: 2000/ 6610 loss:0.0627 imps:56.7 lr: 0.0723 etc:Fri Jun 12 12:38:41 2020
+step: 2100/ 6610 loss:0.0559 imps:74.2 lr: 0.0709 etc:Fri Jun 12 12:38:35 2020
+step: 2200/ 6610 loss:0.0529 imps:76.3 lr: 0.0695 etc:Fri Jun 12 12:38:29 2020
+step: 2300/ 6610 loss:0.0576 imps:77.0 lr: 0.0681 etc:Fri Jun 12 12:38:24 2020
+step: 2400/ 6610 loss:0.0545 imps:77.4 lr: 0.0666 etc:Fri Jun 12 12:38:19 2020
+step: 2500/ 6610 loss:0.0518 imps:77.7 lr: 0.0652 etc:Fri Jun 12 12:38:14 2020
+step: 2600/ 6610 loss:0.0556 imps:77.8 lr: 0.0638 etc:Fri Jun 12 12:38:10 2020
+validating ... loss: 0.0617
+Early stopping activated
+step.make_cam: Fri Jun 12 12:23:53 2020
+[ ]
+step.eval_cam: Fri Jun 12 12:36:16 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 10, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 10.0}
+step.train_cam: Sat Jun 20 12:04:44 2020
+Epoch 1/10
+step:    0/ 6610 loss:0.7081 imps:4.2 lr: 0.1000 etc:Sat Jun 20 19:09:35 2020
+step:  100/ 6610 loss:0.1859 imps:68.6 lr: 0.0986 etc:Sat Jun 20 12:30:33 2020
+step:  200/ 6610 loss:0.1091 imps:74.2 lr: 0.0973 etc:Sat Jun 20 12:28:38 2020
+step:  300/ 6610 loss:0.0997 imps:76.0 lr: 0.0959 etc:Sat Jun 20 12:28:03 2020
+step:  400/ 6610 loss:0.0858 imps:76.9 lr: 0.0945 etc:Sat Jun 20 12:27:48 2020
+step:  500/ 6610 loss:0.0897 imps:77.4 lr: 0.0932 etc:Sat Jun 20 12:27:39 2020
+step:  600/ 6610 loss:0.0855 imps:77.7 lr: 0.0918 etc:Sat Jun 20 12:27:34 2020
+validating ... loss: 0.0760
+Epoch 2/10
+step:  700/ 6610 loss:0.0782 imps:67.2 lr: 0.0904 etc:Sat Jun 20 12:29:28 2020
+step:  800/ 6610 loss:0.0743 imps:75.3 lr: 0.0890 etc:Sat Jun 20 12:29:11 2020
+step:  900/ 6610 loss:0.0760 imps:76.9 lr: 0.0877 etc:Sat Jun 20 12:28:57 2020
+step: 1000/ 6610 loss:0.0748 imps:77.5 lr: 0.0863 etc:Sat Jun 20 12:28:47 2020
+step: 1100/ 6610 loss:0.0716 imps:77.8 lr: 0.0849 etc:Sat Jun 20 12:28:38 2020
+step: 1200/ 6610 loss:0.0708 imps:78.0 lr: 0.0835 etc:Sat Jun 20 12:28:31 2020
+step: 1300/ 6610 loss:0.0728 imps:78.1 lr: 0.0821 etc:Sat Jun 20 12:28:25 2020
+validating ... loss: 0.0655
+Epoch 3/10
+step: 1400/ 6610 loss:0.0612 imps:72.4 lr: 0.0807 etc:Sat Jun 20 12:29:20 2020
+step: 1500/ 6610 loss:0.0654 imps:75.9 lr: 0.0793 etc:Sat Jun 20 12:29:11 2020
+step: 1600/ 6610 loss:0.0645 imps:76.9 lr: 0.0779 etc:Sat Jun 20 12:29:04 2020
+step: 1700/ 6610 loss:0.0647 imps:77.4 lr: 0.0765 etc:Sat Jun 20 12:28:58 2020
+step: 1800/ 6610 loss:0.0604 imps:77.6 lr: 0.0751 etc:Sat Jun 20 12:28:52 2020
+step: 1900/ 6610 loss:0.0605 imps:77.8 lr: 0.0737 etc:Sat Jun 20 12:28:47 2020
+validating ... loss: 0.0619
+Epoch 4/10
+step: 2000/ 6610 loss:0.0570 imps:56.5 lr: 0.0723 etc:Sat Jun 20 12:29:24 2020
+step: 2100/ 6610 loss:0.0548 imps:74.4 lr: 0.0709 etc:Sat Jun 20 12:29:18 2020
+step: 2200/ 6610 loss:0.0566 imps:76.3 lr: 0.0695 etc:Sat Jun 20 12:29:12 2020
+step: 2300/ 6610 loss:0.0555 imps:77.0 lr: 0.0681 etc:Sat Jun 20 12:29:07 2020
+step: 2400/ 6610 loss:0.0512 imps:77.4 lr: 0.0666 etc:Sat Jun 20 12:29:03 2020
+step: 2500/ 6610 loss:0.0525 imps:77.7 lr: 0.0652 etc:Sat Jun 20 12:28:58 2020
+step: 2600/ 6610 loss:0.0554 imps:77.8 lr: 0.0638 etc:Sat Jun 20 12:28:54 2020
+validating ... loss: 0.0549
+Epoch 5/10
+step: 2700/ 6610 loss:0.0497 imps:70.1 lr: 0.0623 etc:Sat Jun 20 12:29:21 2020
+step: 2800/ 6610 loss:0.0490 imps:75.3 lr: 0.0609 etc:Sat Jun 20 12:29:17 2020
+step: 2900/ 6610 loss:0.0501 imps:76.7 lr: 0.0595 etc:Sat Jun 20 12:29:13 2020
+step: 3000/ 6610 loss:0.0494 imps:77.2 lr: 0.0580 etc:Sat Jun 20 12:29:09 2020
+step: 3100/ 6610 loss:0.0491 imps:77.5 lr: 0.0566 etc:Sat Jun 20 12:29:05 2020
+step: 3200/ 6610 loss:0.0469 imps:77.8 lr: 0.0551 etc:Sat Jun 20 12:29:02 2020
+step: 3300/ 6610 loss:0.0467 imps:77.9 lr: 0.0537 etc:Sat Jun 20 12:28:59 2020
+validating ... loss: 0.0578
+Epoch 6/10
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 10, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 10.0}
+step.train_cam: Sat Jun 20 12:17:33 2020
+Epoch 1/10
+step:    0/ 6610 loss:0.7011 imps:4.1 lr: 0.1000 etc:Sat Jun 20 19:25:14 2020
+step:  100/ 6610 loss:0.1865 imps:67.1 lr: 0.0986 etc:Sat Jun 20 12:43:52 2020
+step:  200/ 6610 loss:0.1187 imps:72.4 lr: 0.0973 etc:Sat Jun 20 12:41:56 2020
+step:  300/ 6610 loss:0.1005 imps:74.5 lr: 0.0959 etc:Sat Jun 20 12:41:16 2020
+step:  400/ 6610 loss:0.0958 imps:75.5 lr: 0.0945 etc:Sat Jun 20 12:40:57 2020
+step:  500/ 6610 loss:0.0827 imps:76.1 lr: 0.0932 etc:Sat Jun 20 12:40:45 2020
+step:  600/ 6610 loss:0.0847 imps:76.5 lr: 0.0918 etc:Sat Jun 20 12:40:38 2020
+validating ... loss: 0.0687
+GL:-100.0
+Epoch 2/10
+step:  700/ 6610 loss:0.0793 imps:66.5 lr: 0.0904 etc:Sat Jun 20 12:42:31 2020
+step:  800/ 6610 loss:0.0733 imps:74.8 lr: 0.0890 etc:Sat Jun 20 12:42:12 2020
+step:  900/ 6610 loss:0.0726 imps:76.4 lr: 0.0877 etc:Sat Jun 20 12:41:57 2020
+step: 1000/ 6610 loss:0.0750 imps:77.1 lr: 0.0863 etc:Sat Jun 20 12:41:45 2020
+step: 1100/ 6610 loss:0.0708 imps:77.5 lr: 0.0849 etc:Sat Jun 20 12:41:36 2020
+step: 1200/ 6610 loss:0.0703 imps:77.8 lr: 0.0835 etc:Sat Jun 20 12:41:27 2020
+step: 1300/ 6610 loss:0.0699 imps:77.9 lr: 0.0821 etc:Sat Jun 20 12:41:20 2020
+validating ... loss: 0.0595
+GL:-13.4
+Epoch 3/10
+step: 1400/ 6610 loss:0.0677 imps:72.5 lr: 0.0807 etc:Sat Jun 20 12:42:14 2020
+step: 1500/ 6610 loss:0.0649 imps:75.9 lr: 0.0793 etc:Sat Jun 20 12:42:05 2020
+step: 1600/ 6610 loss:0.0618 imps:77.0 lr: 0.0779 etc:Sat Jun 20 12:41:56 2020
+step: 1700/ 6610 loss:0.0669 imps:77.5 lr: 0.0765 etc:Sat Jun 20 12:41:49 2020
+step: 1800/ 6610 loss:0.0622 imps:77.7 lr: 0.0751 etc:Sat Jun 20 12:41:43 2020
+step: 1900/ 6610 loss:0.0598 imps:77.9 lr: 0.0737 etc:Sat Jun 20 12:41:38 2020
+validating ... loss: 0.0665
+GL:11.8
+Early stopping activated
+step.make_cam: Sat Jun 20 12:24:59 2020
+[ ]
+step.eval_cam: Sat Jun 20 12:37:20 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 30.0}
+step.train_cam: Sat Jun 20 13:53:32 2020
+Epoch 1/1000
+step:    0/661000 loss:0.7115 imps:4.0 lr: 0.1000 etc:Tue Jul 21 08:57:21 2020
+step:  100/661000 loss:0.1850 imps:68.2 lr: 0.1000 etc:Mon Jun 22 08:58:19 2020
+step:  200/661000 loss:0.1177 imps:73.8 lr: 0.1000 etc:Mon Jun 22 05:41:25 2020
+step:  300/661000 loss:0.1001 imps:75.7 lr: 0.1000 etc:Mon Jun 22 04:41:20 2020
+step:  400/661000 loss:0.0859 imps:76.6 lr: 0.0999 etc:Mon Jun 22 04:13:28 2020
+step:  500/661000 loss:0.0888 imps:77.2 lr: 0.0999 etc:Mon Jun 22 03:57:51 2020
+step:  600/661000 loss:0.0873 imps:77.5 lr: 0.0999 etc:Mon Jun 22 03:47:32 2020
+validating ... loss: 0.0846
+GL:-100.0
+Epoch 2/1000
+step:  700/661000 loss:0.0768 imps:66.5 lr: 0.0999 etc:Mon Jun 22 06:57:55 2020
+step:  800/661000 loss:0.0778 imps:75.0 lr: 0.0999 etc:Mon Jun 22 06:28:20 2020
+step:  900/661000 loss:0.0745 imps:76.7 lr: 0.0999 etc:Mon Jun 22 06:05:34 2020
+step: 1000/661000 loss:0.0748 imps:77.3 lr: 0.0999 etc:Mon Jun 22 05:47:36 2020
+step: 1100/661000 loss:0.0747 imps:77.7 lr: 0.0999 etc:Mon Jun 22 05:33:03 2020
+step: 1200/661000 loss:0.0724 imps:77.9 lr: 0.0998 etc:Mon Jun 22 05:21:10 2020
+step: 1300/661000 loss:0.0746 imps:78.0 lr: 0.0998 etc:Mon Jun 22 05:11:07 2020
+validating ... loss: 0.0753
+GL:-11.1
+Epoch 3/1000
+step: 1400/661000 loss:0.0678 imps:71.8 lr: 0.0998 etc:Mon Jun 22 06:43:04 2020
+step: 1500/661000 loss:0.0631 imps:75.5 lr: 0.0998 etc:Mon Jun 22 06:28:54 2020
+step: 1600/661000 loss:0.0620 imps:76.7 lr: 0.0998 etc:Mon Jun 22 06:16:37 2020
+step: 1700/661000 loss:0.0712 imps:77.2 lr: 0.0998 etc:Mon Jun 22 06:05:33 2020
+step: 1800/661000 loss:0.0657 imps:77.5 lr: 0.0998 etc:Mon Jun 22 05:56:00 2020
+step: 1900/661000 loss:0.0678 imps:77.8 lr: 0.0997 etc:Mon Jun 22 05:47:03 2020
+validating ... loss: 0.0692
+GL:-8.1
+Epoch 4/1000
+step: 2000/661000 loss:0.0707 imps:54.6 lr: 0.0997 etc:Mon Jun 22 06:50:07 2020
+step: 2100/661000 loss:0.0591 imps:73.8 lr: 0.0997 etc:Mon Jun 22 06:39:41 2020
+step: 2200/661000 loss:0.0600 imps:76.0 lr: 0.0997 etc:Mon Jun 22 06:30:12 2020
+step: 2300/661000 loss:0.0605 imps:76.9 lr: 0.0997 etc:Mon Jun 22 06:21:27 2020
+step: 2400/661000 loss:0.0589 imps:77.3 lr: 0.0997 etc:Mon Jun 22 06:13:28 2020
+step: 2500/661000 loss:0.0622 imps:77.6 lr: 0.0997 etc:Mon Jun 22 06:06:03 2020
+step: 2600/661000 loss:0.0662 imps:77.8 lr: 0.0996 etc:Mon Jun 22 05:59:20 2020
+validating ... loss: 0.0738
+GL:6.8
+Epoch 5/1000
+step: 2700/661000 loss:0.0614 imps:69.5 lr: 0.0996 etc:Mon Jun 22 06:45:10 2020
+step: 2800/661000 loss:0.0559 imps:75.0 lr: 0.0996 etc:Mon Jun 22 06:37:42 2020
+step: 2900/661000 loss:0.0610 imps:76.5 lr: 0.0996 etc:Mon Jun 22 06:30:28 2020
+step: 3000/661000 loss:0.0583 imps:77.1 lr: 0.0996 etc:Mon Jun 22 06:23:57 2020
+step: 3100/661000 loss:0.0552 imps:77.5 lr: 0.0996 etc:Mon Jun 22 06:17:41 2020
+step: 3200/661000 loss:0.0614 imps:77.7 lr: 0.0996 etc:Mon Jun 22 06:12:03 2020
+step: 3300/661000 loss:0.0571 imps:77.8 lr: 0.0996 etc:Mon Jun 22 06:06:27 2020
+validating ... loss: 0.0613
+GL:-11.4
+Epoch 6/1000
+step: 3400/661000 loss:0.0496 imps:72.8 lr: 0.0995 etc:Mon Jun 22 06:42:49 2020
+step: 3500/661000 loss:0.0547 imps:75.8 lr: 0.0995 etc:Mon Jun 22 06:36:42 2020
+step: 3600/661000 loss:0.0507 imps:76.7 lr: 0.0995 etc:Mon Jun 22 06:31:05 2020
+step: 3700/661000 loss:0.0529 imps:77.3 lr: 0.0995 etc:Mon Jun 22 06:25:34 2020
+step: 3800/661000 loss:0.0552 imps:77.6 lr: 0.0995 etc:Mon Jun 22 06:20:31 2020
+step: 3900/661000 loss:0.0559 imps:77.8 lr: 0.0995 etc:Mon Jun 22 06:15:38 2020
+validating ... loss: 0.0663
+GL:8.1
+Epoch 7/1000
+step: 4000/661000 loss:0.0538 imps:65.0 lr: 0.0995 etc:Mon Jun 22 06:46:01 2020
+step: 4100/661000 loss:0.0488 imps:74.7 lr: 0.0994 etc:Mon Jun 22 06:40:46 2020
