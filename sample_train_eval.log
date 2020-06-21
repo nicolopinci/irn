@@ -498,3 +498,1310 @@ GL:8.1
 Epoch 7/1000
 step: 4000/661000 loss:0.0538 imps:65.0 lr: 0.0995 etc:Mon Jun 22 06:46:01 2020
 step: 4100/661000 loss:0.0488 imps:74.7 lr: 0.0994 etc:Mon Jun 22 06:40:46 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 75.0}
+step.train_cam: Sat Jun 20 15:01:50 2020
+Epoch 1/1000
+step:    0/661000 loss:0.6774 imps:4.3 lr: 0.1000 etc:Sat Jul 18 21:38:42 2020
+step:  100/661000 loss:0.1839 imps:66.9 lr: 0.1000 etc:Mon Jun 22 10:56:43 2020
+step:  200/661000 loss:0.1167 imps:72.2 lr: 0.1000 etc:Mon Jun 22 07:42:40 2020
+step:  300/661000 loss:0.0971 imps:74.2 lr: 0.1000 etc:Mon Jun 22 06:36:44 2020
+step:  400/661000 loss:0.0930 imps:75.3 lr: 0.0999 etc:Mon Jun 22 06:02:31 2020
+step:  500/661000 loss:0.0908 imps:76.0 lr: 0.0999 etc:Mon Jun 22 05:42:41 2020
+step:  600/661000 loss:0.0816 imps:76.4 lr: 0.0999 etc:Mon Jun 22 05:29:21 2020
+validating ... loss: 0.0759
+GL:0.0
+Epoch 2/1000
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 5.0}
+step.train_cam: Sat Jun 20 15:04:32 2020
+Epoch 1/1000
+step:    0/661000 loss:0.7083 imps:4.1 lr: 0.1000 etc:Mon Jul 20 14:58:14 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 20.0}
+step.train_cam: Sat Jun 20 16:03:18 2020
+Epoch 1/1000
+step:    0/661000 loss:0.7042 imps:3.9 lr: 0.1000 etc:Wed Jul 22 10:07:52 2020
+step:  100/661000 loss:0.1810 imps:66.1 lr: 0.1000 etc:Mon Jun 22 12:28:09 2020
+step:  200/661000 loss:0.1225 imps:71.8 lr: 0.1000 etc:Mon Jun 22 08:57:42 2020
+step:  300/661000 loss:0.1006 imps:74.0 lr: 0.1000 etc:Mon Jun 22 07:44:40 2020
+step:  400/661000 loss:0.0948 imps:75.1 lr: 0.0999 etc:Mon Jun 22 07:09:45 2020
+step:  500/661000 loss:0.1019 imps:75.8 lr: 0.0999 etc:Mon Jun 22 06:48:23 2020
+step:  600/661000 loss:0.0840 imps:76.3 lr: 0.0999 etc:Mon Jun 22 06:34:19 2020
+validating ... loss: 0.0784
+GL:0.0
+Epoch 2/1000
+step:  700/661000 loss:0.0803 imps:66.0 lr: 0.0999 etc:Mon Jun 22 09:46:26 2020
+step:  800/661000 loss:0.0797 imps:74.6 lr: 0.0999 etc:Mon Jun 22 09:13:41 2020
+step:  900/661000 loss:0.0819 imps:76.2 lr: 0.0999 etc:Mon Jun 22 08:48:06 2020
+step: 1000/661000 loss:0.0797 imps:77.0 lr: 0.0999 etc:Mon Jun 22 08:27:31 2020
+step: 1100/661000 loss:0.0787 imps:77.3 lr: 0.0999 etc:Mon Jun 22 08:10:57 2020
+step: 1200/661000 loss:0.0750 imps:77.6 lr: 0.0998 etc:Mon Jun 22 07:56:36 2020
+step: 1300/661000 loss:0.0697 imps:77.8 lr: 0.0998 etc:Mon Jun 22 07:44:41 2020
+validating ... loss: 0.0789
+GL:0.6
+Epoch 3/1000
+step: 1400/661000 loss:0.0677 imps:71.1 lr: 0.0998 etc:Mon Jun 22 09:17:18 2020
+step: 1500/661000 loss:0.0680 imps:75.2 lr: 0.0998 etc:Mon Jun 22 09:01:43 2020
+step: 1600/661000 loss:0.0616 imps:76.4 lr: 0.0998 etc:Mon Jun 22 08:48:03 2020
+step: 1700/661000 loss:0.0680 imps:77.0 lr: 0.0998 etc:Mon Jun 22 08:35:42 2020
+step: 1800/661000 loss:0.0687 imps:77.4 lr: 0.0998 etc:Mon Jun 22 08:24:58 2020
+step: 1900/661000 loss:0.0669 imps:77.6 lr: 0.0997 etc:Mon Jun 22 08:15:07 2020
+validating ... loss: 0.0624
+GL:0.0
+Epoch 4/1000
+step: 2000/661000 loss:0.0641 imps:54.4 lr: 0.0997 etc:Mon Jun 22 09:18:02 2020
+step: 2100/661000 loss:0.0596 imps:73.7 lr: 0.0997 etc:Mon Jun 22 09:06:45 2020
+step: 2200/661000 loss:0.0621 imps:76.0 lr: 0.0997 etc:Mon Jun 22 08:56:20 2020
+step: 2300/661000 loss:0.0619 imps:76.8 lr: 0.0997 etc:Mon Jun 22 08:47:02 2020
+step: 2400/661000 loss:0.0649 imps:77.3 lr: 0.0997 etc:Mon Jun 22 08:38:18 2020
+step: 2500/661000 loss:0.0617 imps:77.6 lr: 0.0997 etc:Mon Jun 22 08:30:18 2020
+step: 2600/661000 loss:0.0719 imps:77.8 lr: 0.0996 etc:Mon Jun 22 08:22:58 2020
+validating ... loss: 0.0636
+GL:2.1
+Epoch 5/1000
+step: 2700/661000 loss:0.0597 imps:69.4 lr: 0.0996 etc:Mon Jun 22 09:09:22 2020
+step: 2800/661000 loss:0.0595 imps:75.1 lr: 0.0996 etc:Mon Jun 22 09:01:17 2020
+step: 2900/661000 loss:0.0559 imps:76.4 lr: 0.0996 etc:Mon Jun 22 08:53:46 2020
+step: 3000/661000 loss:0.0565 imps:77.1 lr: 0.0996 etc:Mon Jun 22 08:46:31 2020
+step: 3100/661000 loss:0.0576 imps:77.5 lr: 0.0996 etc:Mon Jun 22 08:39:51 2020
+step: 3200/661000 loss:0.0613 imps:77.7 lr: 0.0996 etc:Mon Jun 22 08:33:40 2020
+step: 3300/661000 loss:0.0573 imps:77.9 lr: 0.0996 etc:Mon Jun 22 08:27:46 2020
+validating ... loss: 0.0681
+GL:9.2
+Epoch 6/1000
+step: 3400/661000 loss:0.0499 imps:72.8 lr: 0.0995 etc:Mon Jun 22 09:04:36 2020
+step: 3500/661000 loss:0.0522 imps:75.7 lr: 0.0995 etc:Mon Jun 22 08:58:13 2020
+step: 3600/661000 loss:0.0610 imps:76.7 lr: 0.0995 etc:Mon Jun 22 08:52:16 2020
+step: 3700/661000 loss:0.0552 imps:77.3 lr: 0.0995 etc:Mon Jun 22 08:46:24 2020
+step: 3800/661000 loss:0.0520 imps:77.6 lr: 0.0995 etc:Mon Jun 22 08:40:57 2020
+step: 3900/661000 loss:0.0577 imps:77.8 lr: 0.0995 etc:Mon Jun 22 08:35:55 2020
+validating ... loss: 0.0717
+GL:15.0
+Epoch 7/1000
+step: 4000/661000 loss:0.0571 imps:65.5 lr: 0.0995 etc:Mon Jun 22 09:06:15 2020
+step: 4100/661000 loss:0.0520 imps:74.7 lr: 0.0994 etc:Mon Jun 22 09:00:53 2020
+step: 4200/661000 loss:0.0904 imps:76.4 lr: 0.0994 etc:Mon Jun 22 08:55:35 2020
+step: 4300/661000 loss:0.0687 imps:77.1 lr: 0.0994 etc:Mon Jun 22 08:50:38 2020
+step: 4400/661000 loss:0.0622 imps:77.5 lr: 0.0994 etc:Mon Jun 22 08:45:52 2020
+step: 4500/661000 loss:0.0581 imps:77.8 lr: 0.0994 etc:Mon Jun 22 08:41:11 2020
+step: 4600/661000 loss:0.0532 imps:77.9 lr: 0.0994 etc:Mon Jun 22 08:36:53 2020
+validating ... loss: 0.0625
+GL:0.1
+Epoch 8/1000
+step: 4700/661000 loss:0.0522 imps:70.9 lr: 0.0994 etc:Mon Jun 22 09:03:06 2020
+step: 4800/661000 loss:0.0503 imps:75.2 lr: 0.0993 etc:Mon Jun 22 08:58:31 2020
+step: 4900/661000 loss:0.0533 imps:76.5 lr: 0.0993 etc:Mon Jun 22 08:54:01 2020
+step: 5000/661000 loss:0.0491 imps:77.1 lr: 0.0993 etc:Mon Jun 22 08:49:48 2020
+step: 5100/661000 loss:0.0536 imps:77.4 lr: 0.0993 etc:Mon Jun 22 08:45:45 2020
+step: 5200/661000 loss:0.0518 imps:77.7 lr: 0.0993 etc:Mon Jun 22 08:41:45 2020
+validating ... loss: 0.0607
+GL:0.0
+Epoch 9/1000
+step: 5300/661000 loss:0.0507 imps:48.2 lr: 0.0993 etc:Mon Jun 22 09:05:01 2020
+step: 5400/661000 loss:0.0431 imps:73.5 lr: 0.0993 etc:Mon Jun 22 09:00:49 2020
+step: 5500/661000 loss:0.0419 imps:75.9 lr: 0.0993 etc:Mon Jun 22 08:56:47 2020
+step: 5600/661000 loss:0.0485 imps:76.8 lr: 0.0992 etc:Mon Jun 22 08:52:54 2020
+step: 5700/661000 loss:0.0505 imps:77.3 lr: 0.0992 etc:Mon Jun 22 08:49:06 2020
+step: 5800/661000 loss:0.0501 imps:77.6 lr: 0.0992 etc:Mon Jun 22 08:45:30 2020
+step: 5900/661000 loss:0.0509 imps:77.8 lr: 0.0992 etc:Mon Jun 22 08:42:02 2020
+validating ... loss: 0.0651
+GL:7.3
+Epoch 10/1000
+step: 6000/661000 loss:0.0443 imps:69.0 lr: 0.0992 etc:Mon Jun 22 09:02:08 2020
+step: 6100/661000 loss:0.0453 imps:75.1 lr: 0.0992 etc:Mon Jun 22 08:58:31 2020
+step: 6200/661000 loss:0.0492 imps:76.6 lr: 0.0992 etc:Mon Jun 22 08:54:58 2020
+step: 6300/661000 loss:0.0471 imps:77.2 lr: 0.0991 etc:Mon Jun 22 08:51:36 2020
+step: 6400/661000 loss:0.0484 imps:77.5 lr: 0.0991 etc:Mon Jun 22 08:48:20 2020
+step: 6500/661000 loss:0.0495 imps:77.7 lr: 0.0991 etc:Mon Jun 22 08:45:06 2020
+step: 6600/661000 loss:0.0455 imps:77.9 lr: 0.0991 etc:Mon Jun 22 08:42:01 2020
+validating ... loss: 0.0710
+GL:17.1
+Epoch 11/1000
+step: 6700/661000 loss:0.0433 imps:72.6 lr: 0.0991 etc:Mon Jun 22 09:00:15 2020
+step: 6800/661000 loss:0.0448 imps:75.7 lr: 0.0991 etc:Mon Jun 22 08:57:01 2020
+step: 6900/661000 loss:0.0443 imps:76.7 lr: 0.0991 etc:Mon Jun 22 08:53:52 2020
+step: 7000/661000 loss:0.0437 imps:77.3 lr: 0.0990 etc:Mon Jun 22 08:50:47 2020
+step: 7100/661000 loss:0.0458 imps:77.6 lr: 0.0990 etc:Mon Jun 22 08:47:49 2020
+step: 7200/661000 loss:0.0490 imps:77.8 lr: 0.0990 etc:Mon Jun 22 08:45:02 2020
+validating ... loss: 0.0672
+GL:10.8
+Epoch 12/1000
+step: 7300/661000 loss:0.0416 imps:61.0 lr: 0.0990 etc:Mon Jun 22 09:01:49 2020
+step: 7400/661000 loss:0.0393 imps:73.9 lr: 0.0990 etc:Mon Jun 22 08:58:47 2020
+step: 7500/661000 loss:0.0524 imps:76.0 lr: 0.0990 etc:Mon Jun 22 08:55:51 2020
+step: 7600/661000 loss:0.0443 imps:76.8 lr: 0.0990 etc:Mon Jun 22 08:52:58 2020
+step: 7700/661000 loss:0.0470 imps:77.3 lr: 0.0990 etc:Mon Jun 22 08:50:12 2020
+step: 7800/661000 loss:0.0522 imps:77.6 lr: 0.0989 etc:Mon Jun 22 08:47:29 2020
+step: 7900/661000 loss:0.0503 imps:77.8 lr: 0.0989 etc:Mon Jun 22 08:44:49 2020
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 5.0}
+step.train_cam: Sat Jun 20 16:43:46 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 5.0}
+step.train_cam: Sat Jun 20 16:43:53 2020
+Epoch 1/1000
+step:    0/661000 loss:0.7146 imps:4.1 lr: 0.1000 etc:Mon Jul 20 14:58:40 2020
+step:  100/661000 loss:0.1842 imps:66.7 lr: 0.1000 etc:Mon Jun 22 12:44:47 2020
+step:  200/661000 loss:0.1167 imps:72.2 lr: 0.1000 etc:Mon Jun 22 09:24:49 2020
+step:  300/661000 loss:0.0970 imps:74.2 lr: 0.1000 etc:Mon Jun 22 08:18:02 2020
+step:  400/661000 loss:0.1028 imps:75.3 lr: 0.0999 etc:Mon Jun 22 07:44:25 2020
+step:  500/661000 loss:0.0935 imps:76.0 lr: 0.0999 etc:Mon Jun 22 07:24:35 2020
+step:  600/661000 loss:0.0930 imps:76.4 lr: 0.0999 etc:Mon Jun 22 07:10:40 2020
+validating ... loss: 0.0674
+GL:0.0
+Epoch 2/1000
+step:  700/661000 loss:0.0821 imps:66.1 lr: 0.0999 etc:Mon Jun 22 10:22:20 2020
+step:  800/661000 loss:0.0756 imps:74.8 lr: 0.0999 etc:Mon Jun 22 09:49:30 2020
+step:  900/661000 loss:0.0842 imps:76.4 lr: 0.0999 etc:Mon Jun 22 09:24:01 2020
+step: 1000/661000 loss:0.0714 imps:77.1 lr: 0.0999 etc:Mon Jun 22 09:04:02 2020
+step: 1100/661000 loss:0.0749 imps:77.4 lr: 0.0999 etc:Mon Jun 22 08:47:40 2020
+step: 1200/661000 loss:0.0754 imps:77.7 lr: 0.0998 etc:Mon Jun 22 08:33:31 2020
+step: 1300/661000 loss:0.0717 imps:77.9 lr: 0.0998 etc:Mon Jun 22 08:21:49 2020
+validating ... loss: 0.0697
+GL:3.4
+Epoch 3/1000
+step: 1400/661000 loss:0.0686 imps:71.6 lr: 0.0998 etc:Mon Jun 22 09:53:20 2020
+step: 1500/661000 loss:0.0612 imps:75.4 lr: 0.0998 etc:Mon Jun 22 09:37:57 2020
+step: 1600/661000 loss:0.0687 imps:76.6 lr: 0.0998 etc:Mon Jun 22 09:24:22 2020
+step: 1700/661000 loss:0.0659 imps:77.2 lr: 0.0998 etc:Mon Jun 22 09:12:12 2020
+step: 1800/661000 loss:0.0748 imps:77.5 lr: 0.0998 etc:Mon Jun 22 09:01:33 2020
+step: 1900/661000 loss:0.0707 imps:77.7 lr: 0.0997 etc:Mon Jun 22 08:52:18 2020
+validating ... loss: 0.0681
+GL:1.0
+Epoch 4/1000
+step: 2000/661000 loss:0.0665 imps:54.6 lr: 0.0997 etc:Mon Jun 22 09:55:26 2020
+step: 2100/661000 loss:0.0662 imps:73.7 lr: 0.0997 etc:Mon Jun 22 09:44:28 2020
+step: 2200/661000 loss:0.0645 imps:76.0 lr: 0.0997 etc:Mon Jun 22 09:34:09 2020
+step: 2300/661000 loss:0.0611 imps:76.9 lr: 0.0997 etc:Mon Jun 22 09:24:54 2020
+step: 2400/661000 loss:0.0634 imps:77.3 lr: 0.0997 etc:Mon Jun 22 09:16:25 2020
+step: 2500/661000 loss:0.0627 imps:77.6 lr: 0.0997 etc:Mon Jun 22 09:08:29 2020
+step: 2600/661000 loss:0.0593 imps:77.8 lr: 0.0996 etc:Mon Jun 22 09:01:22 2020
+validating ... loss: 0.0605
+GL:0.0
+Epoch 5/1000
+step: 2700/661000 loss:0.0558 imps:69.0 lr: 0.0996 etc:Mon Jun 22 09:47:36 2020
+step: 2800/661000 loss:0.0547 imps:74.8 lr: 0.0996 etc:Mon Jun 22 09:39:40 2020
+step: 2900/661000 loss:0.0562 imps:76.4 lr: 0.0996 etc:Mon Jun 22 09:32:01 2020
+step: 3000/661000 loss:0.0559 imps:77.0 lr: 0.0996 etc:Mon Jun 22 09:25:03 2020
+step: 3100/661000 loss:0.0607 imps:77.4 lr: 0.0996 etc:Mon Jun 22 09:18:30 2020
+step: 3200/661000 loss:0.0567 imps:77.7 lr: 0.0996 etc:Mon Jun 22 09:12:17 2020
+step: 3300/661000 loss:0.0592 imps:77.8 lr: 0.0996 etc:Mon Jun 22 09:06:20 2020
+validating ... loss: 0.0576
+GL:0.0
+Epoch 6/1000
+step: 3400/661000 loss:0.0508 imps:72.6 lr: 0.0995 etc:Mon Jun 22 09:42:41 2020
+step: 3500/661000 loss:0.0520 imps:75.7 lr: 0.0995 etc:Mon Jun 22 09:36:19 2020
+step: 3600/661000 loss:0.0535 imps:76.7 lr: 0.0995 etc:Mon Jun 22 09:30:18 2020
+step: 3700/661000 loss:0.0547 imps:77.2 lr: 0.0995 etc:Mon Jun 22 09:24:36 2020
+step: 3800/661000 loss:0.0506 imps:77.6 lr: 0.0995 etc:Mon Jun 22 09:19:07 2020
+step: 3900/661000 loss:0.0562 imps:77.8 lr: 0.0995 etc:Mon Jun 22 09:14:02 2020
+validating ... loss: 0.0643
+GL:11.7
+Early stopping activated
+step.make_cam: Sat Jun 20 16:58:41 2020
+[ ]
+step.eval_cam: Sat Jun 20 17:11:03 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 5.0}
+step.train_cam: Sat Jun 20 17:23:37 2020
+Epoch 1/1000
+step:    0/661000 loss:0.6862 imps:3.9 lr: 0.1000 etc:Tue Jul 21 21:45:33 2020
+step:  100/661000 loss:0.1894 imps:66.4 lr: 0.1000 etc:Mon Jun 22 13:40:17 2020
+step:  200/661000 loss:0.1161 imps:71.9 lr: 0.1000 etc:Mon Jun 22 10:14:20 2020
+step:  300/661000 loss:0.0941 imps:74.0 lr: 0.1000 etc:Mon Jun 22 09:04:55 2020
+step:  400/661000 loss:0.0991 imps:75.2 lr: 0.0999 etc:Mon Jun 22 08:29:00 2020
+step:  500/661000 loss:0.1036 imps:75.8 lr: 0.0999 etc:Mon Jun 22 08:08:03 2020
+step:  600/661000 loss:0.0888 imps:76.3 lr: 0.0999 etc:Mon Jun 22 07:54:05 2020
+validating ... loss: 0.0791
+GL:0.0
+Epoch 2/1000
+step:  700/661000 loss:0.0800 imps:65.2 lr: 0.0999 etc:Mon Jun 22 11:08:30 2020
+step:  800/661000 loss:0.0800 imps:74.2 lr: 0.0999 etc:Mon Jun 22 10:35:45 2020
+step:  900/661000 loss:0.0748 imps:76.1 lr: 0.0999 etc:Mon Jun 22 10:09:51 2020
+step: 1000/661000 loss:0.0787 imps:76.8 lr: 0.0999 etc:Mon Jun 22 09:49:04 2020
+step: 1100/661000 loss:0.0766 imps:77.2 lr: 0.0999 etc:Mon Jun 22 09:32:21 2020
+step: 1200/661000 loss:0.0750 imps:77.5 lr: 0.0998 etc:Mon Jun 22 09:18:23 2020
+step: 1300/661000 loss:0.0756 imps:77.7 lr: 0.0998 etc:Mon Jun 22 09:06:04 2020
+validating ... loss: 0.0637
+GL:0.0
+Epoch 3/1000
+step: 1400/661000 loss:0.0674 imps:71.5 lr: 0.0998 etc:Mon Jun 22 10:38:10 2020
+step: 1500/661000 loss:0.0678 imps:75.4 lr: 0.0998 etc:Mon Jun 22 10:22:16 2020
+step: 1600/661000 loss:0.0679 imps:76.5 lr: 0.0998 etc:Mon Jun 22 10:08:39 2020
+step: 1700/661000 loss:0.0651 imps:77.1 lr: 0.0998 etc:Mon Jun 22 09:56:14 2020
+step: 1800/661000 loss:0.0657 imps:77.5 lr: 0.0998 etc:Mon Jun 22 09:45:36 2020
+step: 1900/661000 loss:0.0664 imps:77.7 lr: 0.0997 etc:Mon Jun 22 09:36:07 2020
+validating ... loss: 0.0705
+GL:10.7
+Early stopping activated
+step.make_cam: Sat Jun 20 17:31:04 2020
+[ ]
+step.eval_cam: Sat Jun 20 17:43:28 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 2.0}
+step.train_cam: Sat Jun 20 17:43:33 2020
+Epoch 1/1000
+step:    0/661000 loss:0.7057 imps:3.9 lr: 0.1000 etc:Wed Jul 22 11:16:51 2020
+step:  100/661000 loss:0.1852 imps:66.3 lr: 0.1000 etc:Mon Jun 22 14:01:22 2020
+step:  200/661000 loss:0.1199 imps:71.9 lr: 0.1000 etc:Mon Jun 22 10:33:42 2020
+step:  300/661000 loss:0.1020 imps:74.1 lr: 0.1000 etc:Mon Jun 22 09:23:02 2020
+step:  400/661000 loss:0.0941 imps:75.2 lr: 0.0999 etc:Mon Jun 22 08:47:59 2020
+step:  500/661000 loss:0.0908 imps:75.9 lr: 0.0999 etc:Mon Jun 22 08:27:16 2020
+step:  600/661000 loss:0.0852 imps:76.4 lr: 0.0999 etc:Mon Jun 22 08:12:01 2020
+validating ... loss: 0.0705
+GL:0.0
+Epoch 2/1000
+step:  700/661000 loss:0.0782 imps:66.4 lr: 0.0999 etc:Mon Jun 22 11:19:32 2020
+step:  800/661000 loss:0.0765 imps:74.7 lr: 0.0999 etc:Mon Jun 22 10:47:58 2020
+step:  900/661000 loss:0.0825 imps:76.3 lr: 0.0999 etc:Mon Jun 22 10:23:03 2020
+step: 1000/661000 loss:0.0698 imps:77.0 lr: 0.0999 etc:Mon Jun 22 10:02:35 2020
+step: 1100/661000 loss:0.0717 imps:77.4 lr: 0.0999 etc:Mon Jun 22 09:46:13 2020
+step: 1200/661000 loss:0.0730 imps:77.6 lr: 0.0998 etc:Mon Jun 22 09:32:45 2020
+step: 1300/661000 loss:0.0776 imps:77.8 lr: 0.0998 etc:Mon Jun 22 09:20:58 2020
+validating ... loss: 0.0797
+GL:13.0
+Early stopping activated
+step.make_cam: Sat Jun 20 17:48:32 2020
+[ ]
+step.eval_cam: Sat Jun 20 18:00:56 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 1000, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 2.0}
+step.train_cam: Sat Jun 20 18:00:58 2020
+Epoch 1/1000
+step:    0/661000 loss:0.7416 imps:4.1 lr: 0.1000 etc:Mon Jul 20 08:25:50 2020
+step:  100/661000 loss:0.1831 imps:66.8 lr: 0.1000 etc:Mon Jun 22 14:00:40 2020
+step:  200/661000 loss:0.1135 imps:72.1 lr: 0.1000 etc:Mon Jun 22 10:44:28 2020
+step:  300/661000 loss:0.1022 imps:74.2 lr: 0.1000 etc:Mon Jun 22 09:36:18 2020
+step:  400/661000 loss:0.0874 imps:75.2 lr: 0.0999 etc:Mon Jun 22 09:03:42 2020
+step:  500/661000 loss:0.0884 imps:75.9 lr: 0.0999 etc:Mon Jun 22 08:43:46 2020
+step:  600/661000 loss:0.0862 imps:76.3 lr: 0.0999 etc:Mon Jun 22 08:29:57 2020
+validating ... loss: 0.0850
+GL:0.0
+Epoch 2/1000
+step:  700/661000 loss:0.0817 imps:65.3 lr: 0.0999 etc:Mon Jun 22 11:44:26 2020
+step:  800/661000 loss:0.0757 imps:74.4 lr: 0.0999 etc:Mon Jun 22 11:10:56 2020
+step:  900/661000 loss:0.0791 imps:76.2 lr: 0.0999 etc:Mon Jun 22 10:45:22 2020
+step: 1000/661000 loss:0.0733 imps:76.9 lr: 0.0999 etc:Mon Jun 22 10:25:03 2020
+step: 1100/661000 loss:0.0731 imps:77.3 lr: 0.0999 etc:Mon Jun 22 10:08:17 2020
+step: 1200/661000 loss:0.0735 imps:77.6 lr: 0.0998 etc:Mon Jun 22 09:54:01 2020
+step: 1300/661000 loss:0.0756 imps:77.8 lr: 0.0998 etc:Mon Jun 22 09:41:57 2020
+validating ... loss: 0.0697
+GL:0.0
+Epoch 3/1000
+step: 1400/661000 loss:0.0716 imps:71.0 lr: 0.0998 etc:Mon Jun 22 11:13:07 2020
+step: 1500/661000 loss:0.0651 imps:75.1 lr: 0.0998 etc:Mon Jun 22 10:57:51 2020
+step: 1600/661000 loss:0.0654 imps:76.3 lr: 0.0998 etc:Mon Jun 22 10:44:23 2020
+step: 1700/661000 loss:0.0668 imps:77.0 lr: 0.0998 etc:Mon Jun 22 10:32:07 2020
+step: 1800/661000 loss:0.0707 imps:77.3 lr: 0.0998 etc:Mon Jun 22 10:21:25 2020
+step: 1900/661000 loss:0.0684 imps:77.6 lr: 0.0997 etc:Mon Jun 22 10:11:46 2020
+validating ... loss: 0.0638
+GL:0.0
+Epoch 4/1000
+step: 2000/661000 loss:0.0778 imps:54.8 lr: 0.0997 etc:Mon Jun 22 11:13:42 2020
+step: 2100/661000 loss:0.0608 imps:73.7 lr: 0.0997 etc:Mon Jun 22 11:02:43 2020
+step: 2200/661000 loss:0.0626 imps:76.0 lr: 0.0997 etc:Mon Jun 22 10:52:31 2020
+step: 2300/661000 loss:0.0560 imps:76.8 lr: 0.0997 etc:Mon Jun 22 10:43:19 2020
+step: 2400/661000 loss:0.0633 imps:77.2 lr: 0.0997 etc:Mon Jun 22 10:34:58 2020
+step: 2500/661000 loss:0.0663 imps:77.5 lr: 0.0997 etc:Mon Jun 22 10:27:15 2020
+step: 2600/661000 loss:0.0603 imps:77.7 lr: 0.0996 etc:Mon Jun 22 10:19:58 2020
+validating ... loss: 0.0609
+GL:0.0
+Epoch 5/1000
+step: 2700/661000 loss:0.0580 imps:69.5 lr: 0.0996 etc:Mon Jun 22 11:05:30 2020
+step: 2800/661000 loss:0.0591 imps:75.1 lr: 0.0996 etc:Mon Jun 22 10:57:32 2020
+step: 2900/661000 loss:0.0580 imps:76.6 lr: 0.0996 etc:Mon Jun 22 10:49:45 2020
+step: 3000/661000 loss:0.0590 imps:77.2 lr: 0.0996 etc:Mon Jun 22 10:42:37 2020
+step: 3100/661000 loss:0.0545 imps:77.5 lr: 0.0996 etc:Mon Jun 22 10:36:00 2020
+step: 3200/661000 loss:0.0588 imps:77.8 lr: 0.0996 etc:Mon Jun 22 10:29:45 2020
+step: 3300/661000 loss:0.0581 imps:78.0 lr: 0.0996 etc:Mon Jun 22 10:23:47 2020
+validating ... loss: 0.0720
+GL:18.1
+Early stopping activated
+step.make_cam: Sat Jun 20 18:13:19 2020
+[ ]
+step.eval_cam: Sat Jun 20 18:25:41 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 100, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criteria': 'threshold', 'stopping_threshold': 2.0}
+step.train_cam: Sat Jun 20 18:41:09 2020
+Epoch 1/100
+step:    0/66100 loss:0.6912 imps:4.1 lr: 0.1000 etc:Tue Jun 23 18:17:45 2020
+step:  100/66100 loss:0.1820 imps:66.6 lr: 0.0999 etc:Sat Jun 20 23:05:52 2020
+step:  200/66100 loss:0.1159 imps:72.2 lr: 0.0997 etc:Sat Jun 20 22:45:20 2020
+step:  300/66100 loss:0.0973 imps:74.2 lr: 0.0996 etc:Sat Jun 20 22:38:39 2020
+step:  400/66100 loss:0.0837 imps:75.3 lr: 0.0995 etc:Sat Jun 20 22:35:10 2020
+step:  500/66100 loss:0.0903 imps:76.0 lr: 0.0993 etc:Sat Jun 20 22:33:13 2020
+step:  600/66100 loss:0.0882 imps:76.4 lr: 0.0992 etc:Sat Jun 20 22:31:49 2020
+validating ... loss: 0.0716
+GL:0.0
+Epoch 2/100
+step:  700/66100 loss:0.0849 imps:66.3 lr: 0.0990 etc:Sat Jun 20 22:50:55 2020
+step:  800/66100 loss:0.0784 imps:74.9 lr: 0.0989 etc:Sat Jun 20 22:47:37 2020
+step:  900/66100 loss:0.0766 imps:76.4 lr: 0.0988 etc:Sat Jun 20 22:45:06 2020
+step: 1000/66100 loss:0.0755 imps:77.1 lr: 0.0986 etc:Sat Jun 20 22:43:05 2020
+step: 1100/66100 loss:0.0736 imps:77.5 lr: 0.0985 etc:Sat Jun 20 22:41:24 2020
+step: 1200/66100 loss:0.0735 imps:77.8 lr: 0.0984 etc:Sat Jun 20 22:40:01 2020
+step: 1300/66100 loss:0.0736 imps:77.9 lr: 0.0982 etc:Sat Jun 20 22:38:50 2020
+validating ... loss: 0.0690
+GL:0.0
+Epoch 3/100
+step: 1400/66100 loss:0.0735 imps:71.9 lr: 0.0981 etc:Sat Jun 20 22:47:59 2020
+step: 1500/66100 loss:0.0654 imps:75.6 lr: 0.0980 etc:Sat Jun 20 22:46:26 2020
+step: 1600/66100 loss:0.0675 imps:76.8 lr: 0.0978 etc:Sat Jun 20 22:45:04 2020
+step: 1700/66100 loss:0.0683 imps:77.3 lr: 0.0977 etc:Sat Jun 20 22:43:52 2020
+step: 1800/66100 loss:0.0658 imps:77.6 lr: 0.0975 etc:Sat Jun 20 22:42:49 2020
+step: 1900/66100 loss:0.0671 imps:77.9 lr: 0.0974 etc:Sat Jun 20 22:41:51 2020
+validating ... loss: 0.0634
+GL:0.0
+Epoch 4/100
+step: 2000/66100 loss:0.0610 imps:53.6 lr: 0.0973 etc:Sat Jun 20 22:48:12 2020
+step: 2100/66100 loss:0.0575 imps:73.4 lr: 0.0971 etc:Sat Jun 20 22:47:07 2020
+step: 2200/66100 loss:0.0608 imps:75.8 lr: 0.0970 etc:Sat Jun 20 22:46:06 2020
+step: 2300/66100 loss:0.0616 imps:76.7 lr: 0.0969 etc:Sat Jun 20 22:45:11 2020
+step: 2400/66100 loss:0.0603 imps:77.2 lr: 0.0967 etc:Sat Jun 20 22:44:20 2020
+step: 2500/66100 loss:0.0601 imps:77.5 lr: 0.0966 etc:Sat Jun 20 22:43:33 2020
+step: 2600/66100 loss:0.0614 imps:77.7 lr: 0.0965 etc:Sat Jun 20 22:42:51 2020
+validating ... loss: 0.0629
+GL:0.0
+Epoch 5/100
+step: 2700/66100 loss:0.0596 imps:69.3 lr: 0.0963 etc:Sat Jun 20 22:47:30 2020
+step: 2800/66100 loss:0.0542 imps:75.0 lr: 0.0962 etc:Sat Jun 20 22:46:42 2020
+step: 2900/66100 loss:0.0552 imps:76.4 lr: 0.0960 etc:Sat Jun 20 22:45:57 2020
+step: 3000/66100 loss:0.0572 imps:77.1 lr: 0.0959 etc:Sat Jun 20 22:45:15 2020
+step: 3100/66100 loss:0.0569 imps:77.5 lr: 0.0958 etc:Sat Jun 20 22:44:35 2020
+step: 3200/66100 loss:0.0565 imps:77.7 lr: 0.0956 etc:Sat Jun 20 22:43:57 2020
+step: 3300/66100 loss:0.0577 imps:77.9 lr: 0.0955 etc:Sat Jun 20 22:43:22 2020
+validating ... loss: 0.0600
+GL:0.0
+Epoch 6/100
+step: 3400/66100 loss:0.0484 imps:72.9 lr: 0.0954 etc:Sat Jun 20 22:46:58 2020
+step: 3500/66100 loss:0.0555 imps:75.8 lr: 0.0952 etc:Sat Jun 20 22:46:20 2020
+step: 3600/66100 loss:0.0507 imps:76.7 lr: 0.0951 etc:Sat Jun 20 22:45:46 2020
+step: 3700/66100 loss:0.0529 imps:77.3 lr: 0.0949 etc:Sat Jun 20 22:45:11 2020
+step: 3800/66100 loss:0.0557 imps:77.6 lr: 0.0948 etc:Sat Jun 20 22:44:39 2020
+step: 3900/66100 loss:0.0494 imps:77.8 lr: 0.0947 etc:Sat Jun 20 22:44:09 2020
+validating ... loss: 0.0611
+GL:1.9
+Epoch 7/100
+step: 4000/66100 loss:0.0533 imps:63.7 lr: 0.0945 etc:Sat Jun 20 22:47:14 2020
+step: 4100/66100 loss:nan imps:75.0 lr: 0.0944 etc:Sat Jun 20 22:46:36 2020
+step: 4200/66100 loss:nan imps:77.3 lr: 0.0943 etc:Sat Jun 20 22:45:59 2020
+step: 4300/66100 loss:nan imps:78.2 lr: 0.0941 etc:Sat Jun 20 22:45:23 2020
+step: 4400/66100 loss:nan imps:78.6 lr: 0.0940 etc:Sat Jun 20 22:44:50 2020
+step: 4500/66100 loss:nan imps:79.0 lr: 0.0939 etc:Sat Jun 20 22:44:17 2020
+step: 4600/66100 loss:nan imps:79.2 lr: 0.0937 etc:Sat Jun 20 22:43:46 2020
+validating ... loss: nan
+GL:nan
+Epoch 8/100
+step: 4700/66100 loss:nan imps:72.0 lr: 0.0936 etc:Sat Jun 20 22:46:19 2020
+step: 4800/66100 loss:nan imps:76.6 lr: 0.0934 etc:Sat Jun 20 22:45:47 2020
+step: 4900/66100 loss:nan imps:78.0 lr: 0.0933 etc:Sat Jun 20 22:45:15 2020
+step: 5000/66100 loss:nan imps:78.6 lr: 0.0932 etc:Sat Jun 20 22:44:45 2020
+step: 5100/66100 loss:nan imps:79.0 lr: 0.0930 etc:Sat Jun 20 22:44:16 2020
+step: 5200/66100 loss:nan imps:79.3 lr: 0.0929 etc:Sat Jun 20 22:43:49 2020
+validating ... loss: nan
+GL:nan
+Epoch 9/100
+step: 5300/66100 loss:nan imps:48.5 lr: 0.0928 etc:Sat Jun 20 22:46:04 2020
+step: 5400/66100 loss:nan imps:75.0 lr: 0.0926 etc:Sat Jun 20 22:45:34 2020
+step: 5500/66100 loss:nan imps:77.5 lr: 0.0925 etc:Sat Jun 20 22:45:07 2020
+step: 5600/66100 loss:nan imps:78.4 lr: 0.0923 etc:Sat Jun 20 22:44:40 2020
+step: 5700/66100 loss:nan imps:78.9 lr: 0.0922 etc:Sat Jun 20 22:44:15 2020
+step: 5800/66100 loss:nan imps:79.1 lr: 0.0921 etc:Sat Jun 20 22:43:51 2020
+step: 5900/66100 loss:nan imps:79.4 lr: 0.0919 etc:Sat Jun 20 22:43:26 2020
+validating ... loss: nan
+GL:nan
+Epoch 10/100
+step: 6000/66100 loss:nan imps:70.1 lr: 0.0918 etc:Sat Jun 20 22:45:24 2020
+step: 6100/66100 loss:nan imps:76.5 lr: 0.0917 etc:Sat Jun 20 22:45:00 2020
+step: 6200/66100 loss:nan imps:78.0 lr: 0.0915 etc:Sat Jun 20 22:44:36 2020
+step: 6300/66100 loss:nan imps:78.7 lr: 0.0914 etc:Sat Jun 20 22:44:13 2020
+step: 6400/66100 loss:nan imps:79.1 lr: 0.0912 etc:Sat Jun 20 22:43:50 2020
+step: 6500/66100 loss:nan imps:79.3 lr: 0.0911 etc:Sat Jun 20 22:43:29 2020
+step: 6600/66100 loss:nan imps:79.5 lr: 0.0910 etc:Sat Jun 20 22:43:07 2020
+validating ... loss: nan
+GL:nan
+Epoch 11/100
+step: 6700/66100 loss:nan imps:74.1 lr: 0.0908 etc:Sat Jun 20 22:44:53 2020
+step: 6800/66100 loss:nan imps:77.3 lr: 0.0907 etc:Sat Jun 20 22:44:31 2020
+step: 6900/66100 loss:nan imps:78.4 lr: 0.0906 etc:Sat Jun 20 22:44:10 2020
+step: 7000/66100 loss:nan imps:78.9 lr: 0.0904 etc:Sat Jun 20 22:43:50 2020
+step: 7100/66100 loss:nan imps:79.2 lr: 0.0903 etc:Sat Jun 20 22:43:30 2020
+step: 7200/66100 loss:nan imps:79.4 lr: 0.0901 etc:Sat Jun 20 22:43:10 2020
+validating ... loss: nan
+GL:nan
+Epoch 12/100
+step: 7300/66100 loss:nan imps:63.4 lr: 0.0900 etc:Sat Jun 20 22:44:47 2020
+step: 7400/66100 loss:nan imps:75.7 lr: 0.0899 etc:Sat Jun 20 22:44:27 2020
+step: 7500/66100 loss:nan imps:77.8 lr: 0.0897 etc:Sat Jun 20 22:44:08 2020
+step: 7600/66100 loss:nan imps:78.5 lr: 0.0896 etc:Sat Jun 20 22:43:49 2020
+step: 7700/66100 loss:nan imps:79.0 lr: 0.0895 etc:Sat Jun 20 22:43:31 2020
+step: 7800/66100 loss:nan imps:79.3 lr: 0.0893 etc:Sat Jun 20 22:43:13 2020
+step: 7900/66100 loss:nan imps:79.4 lr: 0.0892 etc:Sat Jun 20 22:42:56 2020
+validating ... loss: nan
+GL:nan
+Epoch 13/100
+step: 8000/66100 loss:nan imps:71.4 lr: 0.0890 etc:Sat Jun 20 22:44:26 2020
+step: 8100/66100 loss:nan imps:76.5 lr: 0.0889 etc:Sat Jun 20 22:44:08 2020
+step: 8200/66100 loss:nan imps:77.8 lr: 0.0888 etc:Sat Jun 20 22:43:51 2020
+step: 8300/66100 loss:nan imps:78.5 lr: 0.0886 etc:Sat Jun 20 22:43:34 2020
+step: 8400/66100 loss:nan imps:79.0 lr: 0.0885 etc:Sat Jun 20 22:43:17 2020
+step: 8500/66100 loss:nan imps:79.2 lr: 0.0883 etc:Sat Jun 20 22:43:01 2020
+validating ... loss: nan
+GL:nan
+Epoch 14/100
+step: 8600/66100 loss:nan imps:41.4 lr: 0.0882 etc:Sat Jun 20 22:44:23 2020
+step: 8700/66100 loss:nan imps:75.1 lr: 0.0881 etc:Sat Jun 20 22:44:07 2020
+step: 8800/66100 loss:nan imps:77.6 lr: 0.0879 etc:Sat Jun 20 22:43:50 2020
+step: 8900/66100 loss:nan imps:78.4 lr: 0.0878 etc:Sat Jun 20 22:43:35 2020
+step: 9000/66100 loss:nan imps:78.9 lr: 0.0877 etc:Sat Jun 20 22:43:19 2020
+step: 9100/66100 loss:nan imps:79.2 lr: 0.0875 etc:Sat Jun 20 22:43:04 2020
+step: 9200/66100 loss:nan imps:79.4 lr: 0.0874 etc:Sat Jun 20 22:42:49 2020
+validating ... loss: nan
+GL:nan
+Epoch 15/100
+step: 9300/66100 loss:nan imps:68.2 lr: 0.0872 etc:Sat Jun 20 22:44:07 2020
+step: 9400/66100 loss:nan imps:76.1 lr: 0.0871 etc:Sat Jun 20 22:43:52 2020
+step: 9500/66100 loss:nan imps:77.7 lr: 0.0870 etc:Sat Jun 20 22:43:38 2020
+step: 9600/66100 loss:nan imps:78.4 lr: 0.0868 etc:Sat Jun 20 22:43:24 2020
+step: 9700/66100 loss:nan imps:78.8 lr: 0.0867 etc:Sat Jun 20 22:43:10 2020
+step: 9800/66100 loss:nan imps:79.0 lr: 0.0866 etc:Sat Jun 20 22:42:56 2020
+step: 9900/66100 loss:nan imps:79.2 lr: 0.0864 etc:Sat Jun 20 22:42:43 2020
+validating ... loss: nan
+GL:nan
+Epoch 16/100
+step:10000/66100 loss:nan imps:73.3 lr: 0.0863 etc:Sat Jun 20 22:43:55 2020
+step:10100/66100 loss:nan imps:76.9 lr: 0.0861 etc:Sat Jun 20 22:43:41 2020
+step:10200/66100 loss:nan imps:78.0 lr: 0.0860 etc:Sat Jun 20 22:43:28 2020
+step:10300/66100 loss:nan imps:78.6 lr: 0.0859 etc:Sat Jun 20 22:43:15 2020
+step:10400/66100 loss:nan imps:78.9 lr: 0.0857 etc:Sat Jun 20 22:43:02 2020
+step:10500/66100 loss:nan imps:79.1 lr: 0.0856 etc:Sat Jun 20 22:42:49 2020
+validating ... loss: nan
+GL:nan
+Epoch 17/100
+step:10600/66100 loss:nan imps:59.5 lr: 0.0854 etc:Sat Jun 20 22:43:55 2020
+step:10700/66100 loss:nan imps:75.1 lr: 0.0853 etc:Sat Jun 20 22:43:42 2020
+step:10800/66100 loss:nan imps:77.2 lr: 0.0852 etc:Sat Jun 20 22:43:30 2020
+step:10900/66100 loss:nan imps:78.2 lr: 0.0850 etc:Sat Jun 20 22:43:17 2020
+step:11000/66100 loss:nan imps:78.7 lr: 0.0849 etc:Sat Jun 20 22:43:04 2020
+step:11100/66100 loss:nan imps:79.0 lr: 0.0848 etc:Sat Jun 20 22:42:52 2020
+step:11200/66100 loss:nan imps:79.2 lr: 0.0846 etc:Sat Jun 20 22:42:40 2020
+validating ... loss: nan
+GL:nan
+Epoch 18/100
+step:11300/66100 loss:nan imps:71.5 lr: 0.0845 etc:Sat Jun 20 22:43:44 2020
+step:11400/66100 loss:nan imps:76.7 lr: 0.0843 etc:Sat Jun 20 22:43:32 2020
+step:11500/66100 loss:nan imps:78.0 lr: 0.0842 etc:Sat Jun 20 22:43:20 2020
+step:11600/66100 loss:nan imps:78.6 lr: 0.0841 etc:Sat Jun 20 22:43:08 2020
+step:11700/66100 loss:nan imps:79.0 lr: 0.0839 etc:Sat Jun 20 22:42:57 2020
+step:11800/66100 loss:nan imps:79.2 lr: 0.0838 etc:Sat Jun 20 22:42:46 2020
+validating ... loss: nan
+GL:nan
+Epoch 19/100
+step:11900/66100 loss:nan imps:21.2 lr: 0.0836 etc:Sat Jun 20 22:43:46 2020
+step:12000/66100 loss:nan imps:74.4 lr: 0.0835 etc:Sat Jun 20 22:43:34 2020
+step:12100/66100 loss:nan imps:77.1 lr: 0.0834 etc:Sat Jun 20 22:43:23 2020
+step:12200/66100 loss:nan imps:78.2 lr: 0.0832 etc:Sat Jun 20 22:43:12 2020
+step:12300/66100 loss:nan imps:78.7 lr: 0.0831 etc:Sat Jun 20 22:43:01 2020
+step:12400/66100 loss:nan imps:79.0 lr: 0.0829 etc:Sat Jun 20 22:42:50 2020
+step:12500/66100 loss:nan imps:79.2 lr: 0.0828 etc:Sat Jun 20 22:42:39 2020
+validating ... loss: nan
+GL:nan
+Epoch 20/100
+step:12600/66100 loss:nan imps:66.7 lr: 0.0827 etc:Sat Jun 20 22:43:37 2020
+step:12700/66100 loss:nan imps:75.9 lr: 0.0825 etc:Sat Jun 20 22:43:26 2020
+step:12800/66100 loss:nan imps:77.7 lr: 0.0824 etc:Sat Jun 20 22:43:15 2020
+step:12900/66100 loss:nan imps:78.5 lr: 0.0823 etc:Sat Jun 20 22:43:04 2020
+step:13000/66100 loss:nan imps:78.9 lr: 0.0821 etc:Sat Jun 20 22:42:53 2020
+step:13100/66100 loss:nan imps:79.2 lr: 0.0820 etc:Sat Jun 20 22:42:43 2020
+step:13200/66100 loss:nan imps:79.4 lr: 0.0818 etc:Sat Jun 20 22:42:33 2020
+validating ... loss: nan
+GL:nan
+Epoch 21/100
+step:13300/66100 loss:nan imps:72.5 lr: 0.0817 etc:Sat Jun 20 22:43:28 2020
+step:13400/66100 loss:nan imps:76.5 lr: 0.0816 etc:Sat Jun 20 22:43:18 2020
+step:13500/66100 loss:nan imps:77.9 lr: 0.0814 etc:Sat Jun 20 22:43:08 2020
+step:13600/66100 loss:nan imps:78.5 lr: 0.0813 etc:Sat Jun 20 22:42:58 2020
+step:13700/66100 loss:nan imps:79.0 lr: 0.0811 etc:Sat Jun 20 22:42:48 2020
+step:13800/66100 loss:nan imps:79.2 lr: 0.0810 etc:Sat Jun 20 22:42:38 2020
+validating ... loss: nan
+GL:nan
+Epoch 22/100
+step:13900/66100 loss:nan imps:56.7 lr: 0.0809 etc:Sat Jun 20 22:43:30 2020
+step:14000/66100 loss:nan imps:75.1 lr: 0.0807 etc:Sat Jun 20 22:43:20 2020
+step:14100/66100 loss:nan imps:77.4 lr: 0.0806 etc:Sat Jun 20 22:43:11 2020
+step:14200/66100 loss:nan imps:78.3 lr: 0.0804 etc:Sat Jun 20 22:43:01 2020
+step:14300/66100 loss:nan imps:78.8 lr: 0.0803 etc:Sat Jun 20 22:42:51 2020
+step:14400/66100 loss:nan imps:79.1 lr: 0.0802 etc:Sat Jun 20 22:42:42 2020
+step:14500/66100 loss:nan imps:79.3 lr: 0.0800 etc:Sat Jun 20 22:42:33 2020
+validating ... loss: nan
+GL:nan
+Epoch 23/100
+step:14600/66100 loss:nan imps:70.0 lr: 0.0799 etc:Sat Jun 20 22:43:22 2020
+step:14700/66100 loss:nan imps:76.1 lr: 0.0797 etc:Sat Jun 20 22:43:13 2020
+step:14800/66100 loss:nan imps:77.8 lr: 0.0796 etc:Sat Jun 20 22:43:03 2020
+step:14900/66100 loss:nan imps:78.5 lr: 0.0795 etc:Sat Jun 20 22:42:54 2020
+step:15000/66100 loss:nan imps:78.9 lr: 0.0793 etc:Sat Jun 20 22:42:45 2020
+step:15100/66100 loss:nan imps:79.2 lr: 0.0792 etc:Sat Jun 20 22:42:36 2020
+step:15200/66100 loss:nan imps:79.4 lr: 0.0790 etc:Sat Jun 20 22:42:27 2020
+validating ... loss: nan
+GL:nan
+Epoch 24/100
+step:15300/66100 loss:nan imps:74.0 lr: 0.0789 etc:Sat Jun 20 22:43:14 2020
+step:15400/66100 loss:nan imps:77.1 lr: 0.0788 etc:Sat Jun 20 22:43:05 2020
+step:15500/66100 loss:nan imps:78.2 lr: 0.0786 etc:Sat Jun 20 22:42:56 2020
+step:15600/66100 loss:nan imps:78.7 lr: 0.0785 etc:Sat Jun 20 22:42:48 2020
+step:15700/66100 loss:nan imps:79.1 lr: 0.0783 etc:Sat Jun 20 22:42:39 2020
+step:15800/66100 loss:nan imps:79.3 lr: 0.0782 etc:Sat Jun 20 22:42:31 2020
+validating ... loss: nan
+GL:nan
+Epoch 25/100
+step:15900/66100 loss:nan imps:65.3 lr: 0.0781 etc:Sat Jun 20 22:43:16 2020
+step:16000/66100 loss:nan imps:75.7 lr: 0.0779 etc:Sat Jun 20 22:43:07 2020
+step:16100/66100 loss:nan imps:77.5 lr: 0.0778 etc:Sat Jun 20 22:42:59 2020
+step:16200/66100 loss:nan imps:78.4 lr: 0.0776 etc:Sat Jun 20 22:42:50 2020
+step:16300/66100 loss:nan imps:78.9 lr: 0.0775 etc:Sat Jun 20 22:42:42 2020
+step:16400/66100 loss:nan imps:79.2 lr: 0.0774 etc:Sat Jun 20 22:42:34 2020
+step:16500/66100 loss:nan imps:79.4 lr: 0.0772 etc:Sat Jun 20 22:42:26 2020
+validating ... loss: nan
+GL:nan
+Epoch 26/100
+step:16600/66100 loss:nan imps:73.5 lr: 0.0771 etc:Sat Jun 20 22:43:08 2020
+step:16700/66100 loss:nan imps:77.3 lr: 0.0769 etc:Sat Jun 20 22:43:00 2020
+step:16800/66100 loss:nan imps:78.5 lr: 0.0768 etc:Sat Jun 20 22:42:52 2020
+step:16900/66100 loss:nan imps:79.0 lr: 0.0767 etc:Sat Jun 20 22:42:44 2020
+step:17000/66100 loss:nan imps:79.3 lr: 0.0765 etc:Sat Jun 20 22:42:36 2020
+step:17100/66100 loss:nan imps:79.4 lr: 0.0764 etc:Sat Jun 20 22:42:28 2020
+validating ... loss: nan
+GL:nan
+Epoch 27/100
+step:17200/66100 loss:nan imps:52.3 lr: 0.0762 etc:Sat Jun 20 22:43:09 2020
+step:17300/66100 loss:nan imps:75.3 lr: 0.0761 etc:Sat Jun 20 22:43:01 2020
+step:17400/66100 loss:nan imps:77.6 lr: 0.0760 etc:Sat Jun 20 22:42:53 2020
+step:17500/66100 loss:nan imps:78.5 lr: 0.0758 etc:Sat Jun 20 22:42:46 2020
+step:17600/66100 loss:nan imps:78.9 lr: 0.0757 etc:Sat Jun 20 22:42:38 2020
+step:17700/66100 loss:nan imps:79.2 lr: 0.0755 etc:Sat Jun 20 22:42:30 2020
+step:17800/66100 loss:nan imps:79.4 lr: 0.0754 etc:Sat Jun 20 22:42:23 2020
+validating ... loss: nan
+GL:nan
+Epoch 28/100
+step:17900/66100 loss:nan imps:69.3 lr: 0.0753 etc:Sat Jun 20 22:43:04 2020
+step:18000/66100 loss:nan imps:76.1 lr: 0.0751 etc:Sat Jun 20 22:42:57 2020
+step:18100/66100 loss:nan imps:77.6 lr: 0.0750 etc:Sat Jun 20 22:42:49 2020
+step:18200/66100 loss:nan imps:78.4 lr: 0.0748 etc:Sat Jun 20 22:42:42 2020
+step:18300/66100 loss:nan imps:78.8 lr: 0.0747 etc:Sat Jun 20 22:42:35 2020
+step:18400/66100 loss:nan imps:79.1 lr: 0.0746 etc:Sat Jun 20 22:42:27 2020
+step:18500/66100 loss:nan imps:79.3 lr: 0.0744 etc:Sat Jun 20 22:42:20 2020
+validating ... loss: nan
+GL:nan
+Epoch 29/100
+step:18600/66100 loss:nan imps:73.6 lr: 0.0743 etc:Sat Jun 20 22:42:59 2020
+step:18700/66100 loss:nan imps:77.0 lr: 0.0741 etc:Sat Jun 20 22:42:52 2020
+step:18800/66100 loss:nan imps:78.2 lr: 0.0740 etc:Sat Jun 20 22:42:45 2020
+step:18900/66100 loss:nan imps:78.7 lr: 0.0739 etc:Sat Jun 20 22:42:38 2020
+step:19000/66100 loss:nan imps:79.1 lr: 0.0737 etc:Sat Jun 20 22:42:30 2020
+step:19100/66100 loss:nan imps:79.3 lr: 0.0736 etc:Sat Jun 20 22:42:24 2020
+validating ... loss: nan
+GL:nan
+Epoch 30/100
+step:19200/66100 loss:nan imps:64.0 lr: 0.0734 etc:Sat Jun 20 22:43:00 2020
+step:19300/66100 loss:nan imps:75.7 lr: 0.0733 etc:Sat Jun 20 22:42:53 2020
+step:19400/66100 loss:nan imps:77.7 lr: 0.0731 etc:Sat Jun 20 22:42:47 2020
+step:19500/66100 loss:nan imps:78.5 lr: 0.0730 etc:Sat Jun 20 22:42:40 2020
+step:19600/66100 loss:nan imps:78.9 lr: 0.0729 etc:Sat Jun 20 22:42:33 2020
+step:19700/66100 loss:nan imps:79.2 lr: 0.0727 etc:Sat Jun 20 22:42:26 2020
+step:19800/66100 loss:nan imps:79.3 lr: 0.0726 etc:Sat Jun 20 22:42:20 2020
+validating ... loss: nan
+GL:nan
+Epoch 31/100
+step:19900/66100 loss:nan imps:71.8 lr: 0.0724 etc:Sat Jun 20 22:42:56 2020
+step:20000/66100 loss:nan imps:76.6 lr: 0.0723 etc:Sat Jun 20 22:42:49 2020
+step:20100/66100 loss:nan imps:78.0 lr: 0.0722 etc:Sat Jun 20 22:42:42 2020
+step:20200/66100 loss:nan imps:78.6 lr: 0.0720 etc:Sat Jun 20 22:42:36 2020
+step:20300/66100 loss:nan imps:79.0 lr: 0.0719 etc:Sat Jun 20 22:42:29 2020
+step:20400/66100 loss:nan imps:79.3 lr: 0.0717 etc:Sat Jun 20 22:42:23 2020
+validating ... loss: nan
+GL:nan
+Epoch 32/100
+step:20500/66100 loss:nan imps:42.7 lr: 0.0716 etc:Sat Jun 20 22:42:58 2020
+step:20600/66100 loss:nan imps:74.4 lr: 0.0715 etc:Sat Jun 20 22:42:51 2020
+step:20700/66100 loss:nan imps:77.2 lr: 0.0713 etc:Sat Jun 20 22:42:45 2020
+step:20800/66100 loss:nan imps:78.2 lr: 0.0712 etc:Sat Jun 20 22:42:38 2020
+step:20900/66100 loss:nan imps:78.8 lr: 0.0710 etc:Sat Jun 20 22:42:32 2020
+step:21000/66100 loss:nan imps:79.1 lr: 0.0709 etc:Sat Jun 20 22:42:26 2020
+step:21100/66100 loss:nan imps:79.3 lr: 0.0707 etc:Sat Jun 20 22:42:19 2020
+validating ... loss: nan
+GL:nan
+Epoch 33/100
+step:21200/66100 loss:nan imps:68.4 lr: 0.0706 etc:Sat Jun 20 22:42:54 2020
+step:21300/66100 loss:nan imps:76.0 lr: 0.0705 etc:Sat Jun 20 22:42:47 2020
+step:21400/66100 loss:nan imps:77.7 lr: 0.0703 etc:Sat Jun 20 22:42:41 2020
+step:21500/66100 loss:nan imps:78.4 lr: 0.0702 etc:Sat Jun 20 22:42:35 2020
+step:21600/66100 loss:nan imps:78.9 lr: 0.0700 etc:Sat Jun 20 22:42:29 2020
+step:21700/66100 loss:nan imps:79.1 lr: 0.0699 etc:Sat Jun 20 22:42:23 2020
+step:21800/66100 loss:nan imps:79.3 lr: 0.0698 etc:Sat Jun 20 22:42:17 2020
+validating ... loss: nan
+GL:nan
+Epoch 34/100
+step:21900/66100 loss:nan imps:73.3 lr: 0.0696 etc:Sat Jun 20 22:42:50 2020
+step:22000/66100 loss:nan imps:76.9 lr: 0.0695 etc:Sat Jun 20 22:42:43 2020
+step:22100/66100 loss:nan imps:78.2 lr: 0.0693 etc:Sat Jun 20 22:42:37 2020
+step:22200/66100 loss:nan imps:78.7 lr: 0.0692 etc:Sat Jun 20 22:42:31 2020
+step:22300/66100 loss:nan imps:79.1 lr: 0.0690 etc:Sat Jun 20 22:42:25 2020
+step:22400/66100 loss:nan imps:79.3 lr: 0.0689 etc:Sat Jun 20 22:42:19 2020
+validating ... loss: nan
+GL:nan
+Epoch 35/100
+step:22500/66100 loss:nan imps:62.9 lr: 0.0688 etc:Sat Jun 20 22:42:51 2020
+step:22600/66100 loss:nan imps:76.0 lr: 0.0686 etc:Sat Jun 20 22:42:45 2020
+step:22700/66100 loss:nan imps:77.9 lr: 0.0685 etc:Sat Jun 20 22:42:39 2020
+step:22800/66100 loss:nan imps:78.7 lr: 0.0683 etc:Sat Jun 20 22:42:33 2020
+step:22900/66100 loss:nan imps:79.0 lr: 0.0682 etc:Sat Jun 20 22:42:27 2020
+step:23000/66100 loss:nan imps:79.3 lr: 0.0681 etc:Sat Jun 20 22:42:22 2020
+step:23100/66100 loss:nan imps:79.5 lr: 0.0679 etc:Sat Jun 20 22:42:16 2020
+validating ... loss: nan
+GL:nan
+Epoch 36/100
+step:23200/66100 loss:nan imps:71.2 lr: 0.0678 etc:Sat Jun 20 22:42:47 2020
+step:23300/66100 loss:nan imps:76.4 lr: 0.0676 etc:Sat Jun 20 22:42:41 2020
+step:23400/66100 loss:nan imps:77.9 lr: 0.0675 etc:Sat Jun 20 22:42:35 2020
+step:23500/66100 loss:nan imps:78.5 lr: 0.0673 etc:Sat Jun 20 22:42:30 2020
+step:23600/66100 loss:nan imps:78.9 lr: 0.0672 etc:Sat Jun 20 22:42:24 2020
+step:23700/66100 loss:nan imps:79.2 lr: 0.0671 etc:Sat Jun 20 22:42:18 2020
+validating ... loss: nan
+GL:nan
+Epoch 37/100
+step:23800/66100 loss:nan imps:31.5 lr: 0.0669 etc:Sat Jun 20 22:42:49 2020
+step:23900/66100 loss:nan imps:74.8 lr: 0.0668 etc:Sat Jun 20 22:42:43 2020
+step:24000/66100 loss:nan imps:77.5 lr: 0.0666 etc:Sat Jun 20 22:42:38 2020
+step:24100/66100 loss:nan imps:78.4 lr: 0.0665 etc:Sat Jun 20 22:42:32 2020
+step:24200/66100 loss:nan imps:78.9 lr: 0.0663 etc:Sat Jun 20 22:42:27 2020
+step:24300/66100 loss:nan imps:79.2 lr: 0.0662 etc:Sat Jun 20 22:42:21 2020
+step:24400/66100 loss:nan imps:79.4 lr: 0.0661 etc:Sat Jun 20 22:42:16 2020
+validating ... loss: nan
+GL:nan
+Epoch 38/100
+step:24500/66100 loss:nan imps:66.9 lr: 0.0659 etc:Sat Jun 20 22:42:46 2020
+step:24600/66100 loss:nan imps:75.8 lr: 0.0658 etc:Sat Jun 20 22:42:40 2020
+step:24700/66100 loss:nan imps:77.7 lr: 0.0656 etc:Sat Jun 20 22:42:35 2020
+step:24800/66100 loss:nan imps:78.5 lr: 0.0655 etc:Sat Jun 20 22:42:29 2020
+step:24900/66100 loss:nan imps:78.9 lr: 0.0653 etc:Sat Jun 20 22:42:24 2020
+step:25000/66100 loss:nan imps:79.2 lr: 0.0652 etc:Sat Jun 20 22:42:19 2020
+step:25100/66100 loss:nan imps:79.4 lr: 0.0651 etc:Sat Jun 20 22:42:13 2020
+validating ... loss: nan
+GL:nan
+Epoch 39/100
+step:25200/66100 loss:nan imps:73.4 lr: 0.0649 etc:Sat Jun 20 22:42:42 2020
+step:25300/66100 loss:nan imps:77.0 lr: 0.0648 etc:Sat Jun 20 22:42:36 2020
+step:25400/66100 loss:nan imps:78.2 lr: 0.0646 etc:Sat Jun 20 22:42:31 2020
+step:25500/66100 loss:nan imps:78.7 lr: 0.0645 etc:Sat Jun 20 22:42:26 2020
+step:25600/66100 loss:nan imps:79.1 lr: 0.0643 etc:Sat Jun 20 22:42:21 2020
+step:25700/66100 loss:nan imps:79.3 lr: 0.0642 etc:Sat Jun 20 22:42:16 2020
+validating ... loss: nan
+GL:nan
+Epoch 40/100
+step:25800/66100 loss:nan imps:58.8 lr: 0.0641 etc:Sat Jun 20 22:42:43 2020
+step:25900/66100 loss:nan imps:75.4 lr: 0.0639 etc:Sat Jun 20 22:42:38 2020
+step:26000/66100 loss:nan imps:77.7 lr: 0.0638 etc:Sat Jun 20 22:42:33 2020
+step:26100/66100 loss:nan imps:78.4 lr: 0.0636 etc:Sat Jun 20 22:42:28 2020
+step:26200/66100 loss:nan imps:78.9 lr: 0.0635 etc:Sat Jun 20 22:42:23 2020
+step:26300/66100 loss:nan imps:79.2 lr: 0.0633 etc:Sat Jun 20 22:42:18 2020
+step:26400/66100 loss:nan imps:79.4 lr: 0.0632 etc:Sat Jun 20 22:42:13 2020
+validating ... loss: nan
+GL:nan
+Epoch 41/100
+step:26500/66100 loss:nan imps:70.6 lr: 0.0631 etc:Sat Jun 20 22:42:40 2020
+step:26600/66100 loss:nan imps:76.4 lr: 0.0629 etc:Sat Jun 20 22:42:35 2020
+step:26700/66100 loss:nan imps:77.9 lr: 0.0628 etc:Sat Jun 20 22:42:30 2020
+step:26800/66100 loss:nan imps:78.6 lr: 0.0626 etc:Sat Jun 20 22:42:25 2020
+step:26900/66100 loss:nan imps:79.0 lr: 0.0625 etc:Sat Jun 20 22:42:20 2020
+step:27000/66100 loss:nan imps:79.2 lr: 0.0623 etc:Sat Jun 20 22:42:16 2020
+step:27100/66100 loss:nan imps:79.4 lr: 0.0622 etc:Sat Jun 20 22:42:11 2020
+validating ... loss: nan
+GL:nan
+Epoch 42/100
+step:27200/66100 loss:nan imps:74.1 lr: 0.0621 etc:Sat Jun 20 22:42:38 2020
+step:27300/66100 loss:nan imps:77.1 lr: 0.0619 etc:Sat Jun 20 22:42:33 2020
+step:27400/66100 loss:nan imps:78.3 lr: 0.0618 etc:Sat Jun 20 22:42:28 2020
+step:27500/66100 loss:nan imps:78.8 lr: 0.0616 etc:Sat Jun 20 22:42:23 2020
+step:27600/66100 loss:nan imps:79.1 lr: 0.0615 etc:Sat Jun 20 22:42:18 2020
+step:27700/66100 loss:nan imps:79.3 lr: 0.0613 etc:Sat Jun 20 22:42:13 2020
+validating ... loss: nan
+GL:nan
+Epoch 43/100
+step:27800/66100 loss:nan imps:67.2 lr: 0.0612 etc:Sat Jun 20 22:42:39 2020
+step:27900/66100 loss:nan imps:76.1 lr: 0.0610 etc:Sat Jun 20 22:42:34 2020
+step:28000/66100 loss:nan imps:77.9 lr: 0.0609 etc:Sat Jun 20 22:42:29 2020
+step:28100/66100 loss:nan imps:78.6 lr: 0.0608 etc:Sat Jun 20 22:42:25 2020
+step:28200/66100 loss:nan imps:79.0 lr: 0.0606 etc:Sat Jun 20 22:42:20 2020
+step:28300/66100 loss:nan imps:79.2 lr: 0.0605 etc:Sat Jun 20 22:42:15 2020
+step:28400/66100 loss:nan imps:79.4 lr: 0.0603 etc:Sat Jun 20 22:42:11 2020
+validating ... loss: nan
+GL:nan
+Epoch 44/100
+step:28500/66100 loss:nan imps:72.5 lr: 0.0602 etc:Sat Jun 20 22:42:36 2020
+step:28600/66100 loss:nan imps:76.7 lr: 0.0600 etc:Sat Jun 20 22:42:32 2020
+step:28700/66100 loss:nan imps:78.0 lr: 0.0599 etc:Sat Jun 20 22:42:27 2020
+step:28800/66100 loss:nan imps:78.6 lr: 0.0598 etc:Sat Jun 20 22:42:22 2020
+step:28900/66100 loss:nan imps:79.0 lr: 0.0596 etc:Sat Jun 20 22:42:18 2020
+step:29000/66100 loss:nan imps:79.3 lr: 0.0595 etc:Sat Jun 20 22:42:13 2020
+validating ... loss: nan
+GL:nan
+Epoch 45/100
+step:29100/66100 loss:nan imps:54.5 lr: 0.0593 etc:Sat Jun 20 22:42:38 2020
+step:29200/66100 loss:nan imps:75.5 lr: 0.0592 etc:Sat Jun 20 22:42:33 2020
+step:29300/66100 loss:nan imps:77.7 lr: 0.0590 etc:Sat Jun 20 22:42:28 2020
+step:29400/66100 loss:nan imps:78.6 lr: 0.0589 etc:Sat Jun 20 22:42:24 2020
+step:29500/66100 loss:nan imps:79.1 lr: 0.0587 etc:Sat Jun 20 22:42:19 2020
+step:29600/66100 loss:nan imps:79.4 lr: 0.0586 etc:Sat Jun 20 22:42:15 2020
+step:29700/66100 loss:nan imps:79.5 lr: 0.0585 etc:Sat Jun 20 22:42:10 2020
+validating ... loss: nan
+GL:nan
+Epoch 46/100
+step:29800/66100 loss:nan imps:71.1 lr: 0.0583 etc:Sat Jun 20 22:42:34 2020
+step:29900/66100 loss:nan imps:76.8 lr: 0.0582 etc:Sat Jun 20 22:42:30 2020
+step:30000/66100 loss:nan imps:78.2 lr: 0.0580 etc:Sat Jun 20 22:42:25 2020
+step:30100/66100 loss:nan imps:78.8 lr: 0.0579 etc:Sat Jun 20 22:42:21 2020
+step:30200/66100 loss:nan imps:79.2 lr: 0.0577 etc:Sat Jun 20 22:42:16 2020
+step:30300/66100 loss:nan imps:79.4 lr: 0.0576 etc:Sat Jun 20 22:42:12 2020
+step:30400/66100 loss:nan imps:79.6 lr: 0.0574 etc:Sat Jun 20 22:42:08 2020
+validating ... loss: nan
+GL:nan
+Epoch 47/100
+step:30500/66100 loss:nan imps:73.8 lr: 0.0573 etc:Sat Jun 20 22:42:31 2020
+step:30600/66100 loss:nan imps:77.0 lr: 0.0572 etc:Sat Jun 20 22:42:27 2020
+step:30700/66100 loss:nan imps:78.2 lr: 0.0570 etc:Sat Jun 20 22:42:22 2020
+step:30800/66100 loss:nan imps:78.8 lr: 0.0569 etc:Sat Jun 20 22:42:18 2020
+step:30900/66100 loss:nan imps:79.1 lr: 0.0567 etc:Sat Jun 20 22:42:14 2020
+step:31000/66100 loss:nan imps:79.3 lr: 0.0566 etc:Sat Jun 20 22:42:10 2020
+validating ... loss: nan
+GL:nan
+Epoch 48/100
+step:31100/66100 loss:nan imps:66.7 lr: 0.0564 etc:Sat Jun 20 22:42:32 2020
+step:31200/66100 loss:nan imps:76.4 lr: 0.0563 etc:Sat Jun 20 22:42:28 2020
+step:31300/66100 loss:nan imps:78.1 lr: 0.0561 etc:Sat Jun 20 22:42:23 2020
+step:31400/66100 loss:nan imps:78.8 lr: 0.0560 etc:Sat Jun 20 22:42:19 2020
+step:31500/66100 loss:nan imps:79.1 lr: 0.0558 etc:Sat Jun 20 22:42:15 2020
+step:31600/66100 loss:nan imps:79.4 lr: 0.0557 etc:Sat Jun 20 22:42:11 2020
+step:31700/66100 loss:nan imps:79.5 lr: 0.0556 etc:Sat Jun 20 22:42:07 2020
+validating ... loss: nan
+GL:nan
+Epoch 49/100
+step:31800/66100 loss:nan imps:73.4 lr: 0.0554 etc:Sat Jun 20 22:42:28 2020
+step:31900/66100 loss:nan imps:77.4 lr: 0.0553 etc:Sat Jun 20 22:42:24 2020
+step:32000/66100 loss:nan imps:78.5 lr: 0.0551 etc:Sat Jun 20 22:42:20 2020
+step:32100/66100 loss:nan imps:79.0 lr: 0.0550 etc:Sat Jun 20 22:42:16 2020
+step:32200/66100 loss:nan imps:79.3 lr: 0.0548 etc:Sat Jun 20 22:42:12 2020
+step:32300/66100 loss:nan imps:79.5 lr: 0.0547 etc:Sat Jun 20 22:42:08 2020
+validating ... loss: nan
+GL:nan
+Epoch 50/100
+step:32400/66100 loss:nan imps:46.6 lr: 0.0545 etc:Sat Jun 20 22:42:30 2020
+step:32500/66100 loss:nan imps:74.7 lr: 0.0544 etc:Sat Jun 20 22:42:26 2020
+step:32600/66100 loss:nan imps:77.3 lr: 0.0542 etc:Sat Jun 20 22:42:22 2020
+step:32700/66100 loss:nan imps:78.3 lr: 0.0541 etc:Sat Jun 20 22:42:18 2020
+step:32800/66100 loss:nan imps:78.8 lr: 0.0540 etc:Sat Jun 20 22:42:14 2020
+step:32900/66100 loss:nan imps:79.1 lr: 0.0538 etc:Sat Jun 20 22:42:10 2020
+step:33000/66100 loss:nan imps:79.3 lr: 0.0537 etc:Sat Jun 20 22:42:06 2020
+validating ... loss: nan
+GL:nan
+Epoch 51/100
+step:33100/66100 loss:nan imps:69.0 lr: 0.0535 etc:Sat Jun 20 22:42:28 2020
+step:33200/66100 loss:nan imps:76.2 lr: 0.0534 etc:Sat Jun 20 22:42:24 2020
+step:33300/66100 loss:nan imps:77.9 lr: 0.0532 etc:Sat Jun 20 22:42:20 2020
+step:33400/66100 loss:nan imps:78.6 lr: 0.0531 etc:Sat Jun 20 22:42:16 2020
+step:33500/66100 loss:nan imps:79.0 lr: 0.0529 etc:Sat Jun 20 22:42:12 2020
+step:33600/66100 loss:nan imps:79.3 lr: 0.0528 etc:Sat Jun 20 22:42:08 2020
+step:33700/66100 loss:nan imps:79.5 lr: 0.0526 etc:Sat Jun 20 22:42:04 2020
+validating ... loss: nan
+GL:nan
+Epoch 52/100
+step:33800/66100 loss:nan imps:73.5 lr: 0.0525 etc:Sat Jun 20 22:42:25 2020
+step:33900/66100 loss:nan imps:76.9 lr: 0.0523 etc:Sat Jun 20 22:42:22 2020
+step:34000/66100 loss:nan imps:78.1 lr: 0.0522 etc:Sat Jun 20 22:42:18 2020
+step:34100/66100 loss:nan imps:78.7 lr: 0.0521 etc:Sat Jun 20 22:42:14 2020
+step:34200/66100 loss:nan imps:79.0 lr: 0.0519 etc:Sat Jun 20 22:42:10 2020
+step:34300/66100 loss:nan imps:79.2 lr: 0.0518 etc:Sat Jun 20 22:42:06 2020
+validating ... loss: nan
+GL:nan
+Epoch 53/100
+step:34400/66100 loss:nan imps:61.9 lr: 0.0516 etc:Sat Jun 20 22:42:27 2020
+step:34500/66100 loss:nan imps:75.4 lr: 0.0515 etc:Sat Jun 20 22:42:23 2020
+step:34600/66100 loss:nan imps:77.5 lr: 0.0513 etc:Sat Jun 20 22:42:20 2020
+step:34700/66100 loss:nan imps:78.4 lr: 0.0512 etc:Sat Jun 20 22:42:16 2020
+step:34800/66100 loss:nan imps:78.8 lr: 0.0510 etc:Sat Jun 20 22:42:12 2020
+step:34900/66100 loss:nan imps:79.2 lr: 0.0509 etc:Sat Jun 20 22:42:08 2020
+step:35000/66100 loss:nan imps:79.3 lr: 0.0507 etc:Sat Jun 20 22:42:05 2020
+validating ... loss: nan
+GL:nan
+Epoch 54/100
+step:35100/66100 loss:nan imps:72.8 lr: 0.0506 etc:Sat Jun 20 22:42:25 2020
+step:35200/66100 loss:nan imps:77.2 lr: 0.0504 etc:Sat Jun 20 22:42:21 2020
+step:35300/66100 loss:nan imps:78.4 lr: 0.0503 etc:Sat Jun 20 22:42:17 2020
+step:35400/66100 loss:nan imps:78.9 lr: 0.0501 etc:Sat Jun 20 22:42:14 2020
+step:35500/66100 loss:nan imps:79.2 lr: 0.0500 etc:Sat Jun 20 22:42:10 2020
+step:35600/66100 loss:nan imps:79.4 lr: 0.0499 etc:Sat Jun 20 22:42:06 2020
+validating ... loss: nan
+GL:nan
+Epoch 55/100
+step:35700/66100 loss:nan imps:39.6 lr: 0.0497 etc:Sat Jun 20 22:42:26 2020
+step:35800/66100 loss:nan imps:75.4 lr: 0.0496 etc:Sat Jun 20 22:42:22 2020
+step:35900/66100 loss:nan imps:77.6 lr: 0.0494 etc:Sat Jun 20 22:42:19 2020
+step:36000/66100 loss:nan imps:78.5 lr: 0.0493 etc:Sat Jun 20 22:42:15 2020
+step:36100/66100 loss:nan imps:79.0 lr: 0.0491 etc:Sat Jun 20 22:42:12 2020
+step:36200/66100 loss:nan imps:79.2 lr: 0.0490 etc:Sat Jun 20 22:42:08 2020
+step:36300/66100 loss:nan imps:79.4 lr: 0.0488 etc:Sat Jun 20 22:42:04 2020
+validating ... loss: nan
+GL:nan
+Epoch 56/100
+step:36400/66100 loss:nan imps:67.9 lr: 0.0487 etc:Sat Jun 20 22:42:24 2020
+step:36500/66100 loss:nan imps:76.1 lr: 0.0485 etc:Sat Jun 20 22:42:21 2020
+step:36600/66100 loss:nan imps:77.7 lr: 0.0484 etc:Sat Jun 20 22:42:17 2020
+step:36700/66100 loss:nan imps:78.5 lr: 0.0482 etc:Sat Jun 20 22:42:14 2020
+step:36800/66100 loss:nan imps:78.9 lr: 0.0481 etc:Sat Jun 20 22:42:10 2020
+step:36900/66100 loss:nan imps:79.2 lr: 0.0479 etc:Sat Jun 20 22:42:06 2020
+step:37000/66100 loss:nan imps:79.4 lr: 0.0478 etc:Sat Jun 20 22:42:03 2020
+validating ... loss: nan
+GL:nan
+Epoch 57/100
+step:37100/66100 loss:nan imps:73.6 lr: 0.0476 etc:Sat Jun 20 22:42:22 2020
+step:37200/66100 loss:nan imps:77.2 lr: 0.0475 etc:Sat Jun 20 22:42:19 2020
+step:37300/66100 loss:nan imps:78.2 lr: 0.0473 etc:Sat Jun 20 22:42:15 2020
+step:37400/66100 loss:nan imps:78.7 lr: 0.0472 etc:Sat Jun 20 22:42:12 2020
+step:37500/66100 loss:nan imps:79.1 lr: 0.0470 etc:Sat Jun 20 22:42:08 2020
+step:37600/66100 loss:nan imps:79.3 lr: 0.0469 etc:Sat Jun 20 22:42:05 2020
+validating ... loss: nan
+GL:nan
+Epoch 58/100
+step:37700/66100 loss:nan imps:58.6 lr: 0.0468 etc:Sat Jun 20 22:42:24 2020
+step:37800/66100 loss:nan imps:74.9 lr: 0.0466 etc:Sat Jun 20 22:42:21 2020
+step:37900/66100 loss:nan imps:77.2 lr: 0.0465 etc:Sat Jun 20 22:42:17 2020
+step:38000/66100 loss:nan imps:78.2 lr: 0.0463 etc:Sat Jun 20 22:42:14 2020
+step:38100/66100 loss:nan imps:78.7 lr: 0.0462 etc:Sat Jun 20 22:42:10 2020
+step:38200/66100 loss:nan imps:79.0 lr: 0.0460 etc:Sat Jun 20 22:42:07 2020
+step:38300/66100 loss:nan imps:79.3 lr: 0.0459 etc:Sat Jun 20 22:42:03 2020
+validating ... loss: nan
+GL:nan
+Epoch 59/100
+step:38400/66100 loss:nan imps:71.0 lr: 0.0457 etc:Sat Jun 20 22:42:22 2020
+step:38500/66100 loss:nan imps:76.6 lr: 0.0456 etc:Sat Jun 20 22:42:18 2020
+step:38600/66100 loss:nan imps:78.0 lr: 0.0454 etc:Sat Jun 20 22:42:15 2020
+step:38700/66100 loss:nan imps:78.6 lr: 0.0453 etc:Sat Jun 20 22:42:12 2020
+step:38800/66100 loss:nan imps:79.0 lr: 0.0451 etc:Sat Jun 20 22:42:08 2020
+step:38900/66100 loss:nan imps:79.3 lr: 0.0450 etc:Sat Jun 20 22:42:05 2020
+validating ... loss: nan
+GL:nan
+Epoch 60/100
+step:39000/66100 loss:nan imps:16.2 lr: 0.0448 etc:Sat Jun 20 22:42:23 2020
+step:39100/66100 loss:nan imps:74.6 lr: 0.0447 etc:Sat Jun 20 22:42:20 2020
+step:39200/66100 loss:nan imps:77.2 lr: 0.0445 etc:Sat Jun 20 22:42:16 2020
+step:39300/66100 loss:nan imps:78.2 lr: 0.0444 etc:Sat Jun 20 22:42:13 2020
+step:39400/66100 loss:nan imps:78.7 lr: 0.0442 etc:Sat Jun 20 22:42:10 2020
+step:39500/66100 loss:nan imps:79.0 lr: 0.0441 etc:Sat Jun 20 22:42:07 2020
+step:39600/66100 loss:nan imps:79.3 lr: 0.0439 etc:Sat Jun 20 22:42:03 2020
+validating ... loss: nan
+GL:nan
+Epoch 61/100
+step:39700/66100 loss:nan imps:66.2 lr: 0.0438 etc:Sat Jun 20 22:42:22 2020
+step:39800/66100 loss:nan imps:75.7 lr: 0.0436 etc:Sat Jun 20 22:42:19 2020
+step:39900/66100 loss:nan imps:77.5 lr: 0.0435 etc:Sat Jun 20 22:42:15 2020
+step:40000/66100 loss:nan imps:78.4 lr: 0.0433 etc:Sat Jun 20 22:42:12 2020
+step:40100/66100 loss:nan imps:78.8 lr: 0.0432 etc:Sat Jun 20 22:42:09 2020
+step:40200/66100 loss:nan imps:79.1 lr: 0.0430 etc:Sat Jun 20 22:42:06 2020
+step:40300/66100 loss:nan imps:79.3 lr: 0.0429 etc:Sat Jun 20 22:42:02 2020
+validating ... loss: nan
+GL:nan
+Epoch 62/100
+step:40400/66100 loss:nan imps:73.5 lr: 0.0427 etc:Sat Jun 20 22:42:20 2020
+step:40500/66100 loss:nan imps:77.3 lr: 0.0426 etc:Sat Jun 20 22:42:17 2020
+step:40600/66100 loss:nan imps:78.4 lr: 0.0424 etc:Sat Jun 20 22:42:13 2020
+step:40700/66100 loss:nan imps:79.0 lr: 0.0423 etc:Sat Jun 20 22:42:10 2020
+step:40800/66100 loss:nan imps:79.3 lr: 0.0421 etc:Sat Jun 20 22:42:07 2020
+step:40900/66100 loss:nan imps:79.5 lr: 0.0420 etc:Sat Jun 20 22:42:04 2020
+validating ... loss: nan
+GL:nan
+Epoch 63/100
+step:41000/66100 loss:nan imps:55.3 lr: 0.0418 etc:Sat Jun 20 22:42:21 2020
+step:41100/66100 loss:nan imps:75.0 lr: 0.0417 etc:Sat Jun 20 22:42:18 2020
+step:41200/66100 loss:nan imps:77.4 lr: 0.0415 etc:Sat Jun 20 22:42:15 2020
+step:41300/66100 loss:nan imps:78.4 lr: 0.0414 etc:Sat Jun 20 22:42:12 2020
+step:41400/66100 loss:nan imps:78.8 lr: 0.0412 etc:Sat Jun 20 22:42:09 2020
+step:41500/66100 loss:nan imps:79.2 lr: 0.0411 etc:Sat Jun 20 22:42:05 2020
+step:41600/66100 loss:nan imps:79.4 lr: 0.0409 etc:Sat Jun 20 22:42:02 2020
+validating ... loss: nan
+GL:nan
+Epoch 64/100
+step:41700/66100 loss:nan imps:70.2 lr: 0.0408 etc:Sat Jun 20 22:42:20 2020
+step:41800/66100 loss:nan imps:76.3 lr: 0.0406 etc:Sat Jun 20 22:42:16 2020
+step:41900/66100 loss:nan imps:77.8 lr: 0.0405 etc:Sat Jun 20 22:42:13 2020
+step:42000/66100 loss:nan imps:78.6 lr: 0.0403 etc:Sat Jun 20 22:42:10 2020
+step:42100/66100 loss:nan imps:79.0 lr: 0.0402 etc:Sat Jun 20 22:42:07 2020
+step:42200/66100 loss:nan imps:79.2 lr: 0.0400 etc:Sat Jun 20 22:42:04 2020
+step:42300/66100 loss:nan imps:79.4 lr: 0.0399 etc:Sat Jun 20 22:42:01 2020
+validating ... loss: nan
+GL:nan
+Epoch 65/100
+step:42400/66100 loss:nan imps:73.9 lr: 0.0397 etc:Sat Jun 20 22:42:18 2020
+step:42500/66100 loss:nan imps:76.9 lr: 0.0396 etc:Sat Jun 20 22:42:15 2020
+step:42600/66100 loss:nan imps:78.1 lr: 0.0394 etc:Sat Jun 20 22:42:12 2020
+step:42700/66100 loss:nan imps:78.7 lr: 0.0393 etc:Sat Jun 20 22:42:09 2020
+step:42800/66100 loss:nan imps:79.0 lr: 0.0391 etc:Sat Jun 20 22:42:06 2020
+step:42900/66100 loss:nan imps:79.2 lr: 0.0390 etc:Sat Jun 20 22:42:03 2020
+validating ... loss: nan
+GL:nan
+Epoch 66/100
+step:43000/66100 loss:nan imps:65.4 lr: 0.0388 etc:Sat Jun 20 22:42:20 2020
+step:43100/66100 loss:nan imps:75.8 lr: 0.0387 etc:Sat Jun 20 22:42:17 2020
+step:43200/66100 loss:nan imps:77.7 lr: 0.0385 etc:Sat Jun 20 22:42:14 2020
+step:43300/66100 loss:nan imps:78.6 lr: 0.0384 etc:Sat Jun 20 22:42:11 2020
+step:43400/66100 loss:nan imps:78.9 lr: 0.0382 etc:Sat Jun 20 22:42:08 2020
+step:43500/66100 loss:nan imps:79.2 lr: 0.0381 etc:Sat Jun 20 22:42:05 2020
+step:43600/66100 loss:nan imps:79.4 lr: 0.0379 etc:Sat Jun 20 22:42:02 2020
+validating ... loss: nan
+GL:nan
+Epoch 67/100
+step:43700/66100 loss:nan imps:73.0 lr: 0.0378 etc:Sat Jun 20 22:42:18 2020
+step:43800/66100 loss:nan imps:77.0 lr: 0.0376 etc:Sat Jun 20 22:42:15 2020
+step:43900/66100 loss:nan imps:78.2 lr: 0.0375 etc:Sat Jun 20 22:42:12 2020
+step:44000/66100 loss:nan imps:78.8 lr: 0.0373 etc:Sat Jun 20 22:42:09 2020
+step:44100/66100 loss:nan imps:79.1 lr: 0.0372 etc:Sat Jun 20 22:42:06 2020
+step:44200/66100 loss:nan imps:79.3 lr: 0.0370 etc:Sat Jun 20 22:42:03 2020
+validating ... loss: nan
+GL:nan
+Epoch 68/100
+step:44300/66100 loss:nan imps:50.3 lr: 0.0368 etc:Sat Jun 20 22:42:20 2020
+step:44400/66100 loss:nan imps:74.9 lr: 0.0367 etc:Sat Jun 20 22:42:17 2020
+step:44500/66100 loss:nan imps:77.3 lr: 0.0365 etc:Sat Jun 20 22:42:14 2020
+step:44600/66100 loss:nan imps:78.3 lr: 0.0364 etc:Sat Jun 20 22:42:11 2020
+step:44700/66100 loss:nan imps:78.8 lr: 0.0362 etc:Sat Jun 20 22:42:08 2020
+step:44800/66100 loss:nan imps:79.1 lr: 0.0361 etc:Sat Jun 20 22:42:05 2020
+step:44900/66100 loss:nan imps:79.3 lr: 0.0359 etc:Sat Jun 20 22:42:02 2020
+validating ... loss: nan
+GL:nan
+Epoch 69/100
+step:45000/66100 loss:nan imps:70.9 lr: 0.0358 etc:Sat Jun 20 22:42:18 2020
+step:45100/66100 loss:nan imps:76.9 lr: 0.0356 etc:Sat Jun 20 22:42:15 2020
+step:45200/66100 loss:nan imps:78.3 lr: 0.0355 etc:Sat Jun 20 22:42:12 2020
+step:45300/66100 loss:nan imps:78.9 lr: 0.0353 etc:Sat Jun 20 22:42:09 2020
+step:45400/66100 loss:nan imps:79.3 lr: 0.0352 etc:Sat Jun 20 22:42:06 2020
+step:45500/66100 loss:nan imps:79.5 lr: 0.0350 etc:Sat Jun 20 22:42:04 2020
+step:45600/66100 loss:nan imps:79.6 lr: 0.0349 etc:Sat Jun 20 22:42:01 2020
+validating ... loss: nan
+GL:nan
+Epoch 70/100
+step:45700/66100 loss:nan imps:73.6 lr: 0.0347 etc:Sat Jun 20 22:42:16 2020
+step:45800/66100 loss:nan imps:77.0 lr: 0.0346 etc:Sat Jun 20 22:42:14 2020
+step:45900/66100 loss:nan imps:78.1 lr: 0.0344 etc:Sat Jun 20 22:42:11 2020
+step:46000/66100 loss:nan imps:78.7 lr: 0.0343 etc:Sat Jun 20 22:42:08 2020
+step:46100/66100 loss:nan imps:79.0 lr: 0.0341 etc:Sat Jun 20 22:42:05 2020
+step:46200/66100 loss:nan imps:79.3 lr: 0.0339 etc:Sat Jun 20 22:42:02 2020
+validating ... loss: nan
+GL:nan
+Epoch 71/100
+step:46300/66100 loss:nan imps:64.3 lr: 0.0338 etc:Sat Jun 20 22:42:18 2020
+step:46400/66100 loss:nan imps:75.9 lr: 0.0336 etc:Sat Jun 20 22:42:15 2020
+step:46500/66100 loss:nan imps:77.8 lr: 0.0335 etc:Sat Jun 20 22:42:12 2020
+step:46600/66100 loss:nan imps:78.6 lr: 0.0333 etc:Sat Jun 20 22:42:09 2020
+step:46700/66100 loss:nan imps:79.0 lr: 0.0332 etc:Sat Jun 20 22:42:06 2020
+step:46800/66100 loss:nan imps:79.3 lr: 0.0330 etc:Sat Jun 20 22:42:04 2020
+step:46900/66100 loss:nan imps:79.4 lr: 0.0329 etc:Sat Jun 20 22:42:01 2020
+validating ... loss: nan
+GL:nan
+Epoch 72/100
+step:47000/66100 loss:nan imps:72.1 lr: 0.0327 etc:Sat Jun 20 22:42:16 2020
+step:47100/66100 loss:nan imps:76.8 lr: 0.0326 etc:Sat Jun 20 22:42:13 2020
+step:47200/66100 loss:nan imps:78.2 lr: 0.0324 etc:Sat Jun 20 22:42:11 2020
+step:47300/66100 loss:nan imps:78.7 lr: 0.0323 etc:Sat Jun 20 22:42:08 2020
+step:47400/66100 loss:nan imps:79.1 lr: 0.0321 etc:Sat Jun 20 22:42:05 2020
+step:47500/66100 loss:nan imps:79.3 lr: 0.0319 etc:Sat Jun 20 22:42:02 2020
+validating ... loss: nan
+GL:nan
+Epoch 73/100
+step:47600/66100 loss:nan imps:40.9 lr: 0.0318 etc:Sat Jun 20 22:42:17 2020
+step:47700/66100 loss:nan imps:74.6 lr: 0.0316 etc:Sat Jun 20 22:42:15 2020
+step:47800/66100 loss:nan imps:77.2 lr: 0.0315 etc:Sat Jun 20 22:42:12 2020
+step:47900/66100 loss:nan imps:78.3 lr: 0.0313 etc:Sat Jun 20 22:42:09 2020
+step:48000/66100 loss:nan imps:78.8 lr: 0.0312 etc:Sat Jun 20 22:42:07 2020
+step:48100/66100 loss:nan imps:79.1 lr: 0.0310 etc:Sat Jun 20 22:42:04 2020
+step:48200/66100 loss:nan imps:79.3 lr: 0.0309 etc:Sat Jun 20 22:42:01 2020
+validating ... loss: nan
+GL:nan
+Epoch 74/100
+step:48300/66100 loss:nan imps:68.3 lr: 0.0307 etc:Sat Jun 20 22:42:16 2020
+step:48400/66100 loss:nan imps:76.0 lr: 0.0305 etc:Sat Jun 20 22:42:13 2020
+step:48500/66100 loss:nan imps:77.7 lr: 0.0304 etc:Sat Jun 20 22:42:11 2020
+step:48600/66100 loss:nan imps:78.5 lr: 0.0302 etc:Sat Jun 20 22:42:08 2020
+step:48700/66100 loss:nan imps:78.9 lr: 0.0301 etc:Sat Jun 20 22:42:05 2020
+step:48800/66100 loss:nan imps:79.1 lr: 0.0299 etc:Sat Jun 20 22:42:03 2020
+step:48900/66100 loss:nan imps:79.4 lr: 0.0298 etc:Sat Jun 20 22:42:00 2020
+validating ... loss: nan
+GL:nan
+Epoch 75/100
+step:49000/66100 loss:nan imps:74.2 lr: 0.0296 etc:Sat Jun 20 22:42:14 2020
+step:49100/66100 loss:nan imps:77.3 lr: 0.0295 etc:Sat Jun 20 22:42:12 2020
+step:49200/66100 loss:nan imps:78.4 lr: 0.0293 etc:Sat Jun 20 22:42:09 2020
+step:49300/66100 loss:nan imps:78.9 lr: 0.0291 etc:Sat Jun 20 22:42:07 2020
+step:49400/66100 loss:nan imps:79.2 lr: 0.0290 etc:Sat Jun 20 22:42:04 2020
+step:49500/66100 loss:nan imps:79.4 lr: 0.0288 etc:Sat Jun 20 22:42:01 2020
+validating ... loss: nan
+GL:nan
+Epoch 76/100
+step:49600/66100 loss:nan imps:61.4 lr: 0.0287 etc:Sat Jun 20 22:42:16 2020
+step:49700/66100 loss:nan imps:75.7 lr: 0.0285 etc:Sat Jun 20 22:42:13 2020
+step:49800/66100 loss:nan imps:77.7 lr: 0.0284 etc:Sat Jun 20 22:42:10 2020
+step:49900/66100 loss:nan imps:78.5 lr: 0.0282 etc:Sat Jun 20 22:42:08 2020
+step:50000/66100 loss:nan imps:78.9 lr: 0.0281 etc:Sat Jun 20 22:42:05 2020
+step:50100/66100 loss:nan imps:79.2 lr: 0.0279 etc:Sat Jun 20 22:42:03 2020
+step:50200/66100 loss:nan imps:79.4 lr: 0.0277 etc:Sat Jun 20 22:42:00 2020
+validating ... loss: nan
+GL:nan
+Epoch 77/100
+step:50300/66100 loss:nan imps:71.2 lr: 0.0276 etc:Sat Jun 20 22:42:15 2020
+step:50400/66100 loss:nan imps:76.6 lr: 0.0274 etc:Sat Jun 20 22:42:12 2020
+step:50500/66100 loss:nan imps:78.0 lr: 0.0273 etc:Sat Jun 20 22:42:09 2020
+step:50600/66100 loss:nan imps:78.6 lr: 0.0271 etc:Sat Jun 20 22:42:07 2020
+step:50700/66100 loss:nan imps:79.0 lr: 0.0270 etc:Sat Jun 20 22:42:04 2020
+step:50800/66100 loss:nan imps:79.2 lr: 0.0268 etc:Sat Jun 20 22:42:02 2020
+validating ... loss: nan
+GL:nan
+Epoch 78/100
+step:50900/66100 loss:nan imps:27.1 lr: 0.0266 etc:Sat Jun 20 22:42:16 2020
+step:51000/66100 loss:nan imps:74.7 lr: 0.0265 etc:Sat Jun 20 22:42:13 2020
+step:51100/66100 loss:nan imps:77.4 lr: 0.0263 etc:Sat Jun 20 22:42:11 2020
+step:51200/66100 loss:nan imps:78.4 lr: 0.0262 etc:Sat Jun 20 22:42:08 2020
+step:51300/66100 loss:nan imps:78.8 lr: 0.0260 etc:Sat Jun 20 22:42:05 2020
+step:51400/66100 loss:nan imps:79.2 lr: 0.0258 etc:Sat Jun 20 22:42:03 2020
+step:51500/66100 loss:nan imps:79.4 lr: 0.0257 etc:Sat Jun 20 22:42:00 2020
+validating ... loss: nan
+GL:nan
+Epoch 79/100
+step:51600/66100 loss:nan imps:67.2 lr: 0.0255 etc:Sat Jun 20 22:42:14 2020
+step:51700/66100 loss:nan imps:76.0 lr: 0.0254 etc:Sat Jun 20 22:42:12 2020
+step:51800/66100 loss:nan imps:77.9 lr: 0.0252 etc:Sat Jun 20 22:42:09 2020
+step:51900/66100 loss:nan imps:78.6 lr: 0.0251 etc:Sat Jun 20 22:42:07 2020
+step:52000/66100 loss:nan imps:79.1 lr: 0.0249 etc:Sat Jun 20 22:42:04 2020
+step:52100/66100 loss:nan imps:79.3 lr: 0.0247 etc:Sat Jun 20 22:42:02 2020
+step:52200/66100 loss:nan imps:79.4 lr: 0.0246 etc:Sat Jun 20 22:41:59 2020
+validating ... loss: nan
+GL:nan
+Epoch 80/100
+step:52300/66100 loss:nan imps:73.0 lr: 0.0244 etc:Sat Jun 20 22:42:13 2020
+step:52400/66100 loss:nan imps:76.9 lr: 0.0243 etc:Sat Jun 20 22:42:10 2020
+step:52500/66100 loss:nan imps:78.1 lr: 0.0241 etc:Sat Jun 20 22:42:08 2020
+step:52600/66100 loss:nan imps:78.7 lr: 0.0239 etc:Sat Jun 20 22:42:05 2020
+step:52700/66100 loss:nan imps:79.0 lr: 0.0238 etc:Sat Jun 20 22:42:03 2020
+step:52800/66100 loss:nan imps:79.3 lr: 0.0236 etc:Sat Jun 20 22:42:00 2020
+validating ... loss: nan
+GL:nan
+Epoch 81/100
+step:52900/66100 loss:nan imps:58.2 lr: 0.0235 etc:Sat Jun 20 22:42:14 2020
+step:53000/66100 loss:nan imps:75.6 lr: 0.0233 etc:Sat Jun 20 22:42:11 2020
+step:53100/66100 loss:nan imps:77.7 lr: 0.0231 etc:Sat Jun 20 22:42:09 2020
+step:53200/66100 loss:nan imps:78.5 lr: 0.0230 etc:Sat Jun 20 22:42:07 2020
+step:53300/66100 loss:nan imps:79.0 lr: 0.0228 etc:Sat Jun 20 22:42:04 2020
+step:53400/66100 loss:nan imps:79.3 lr: 0.0227 etc:Sat Jun 20 22:42:02 2020
+step:53500/66100 loss:nan imps:79.4 lr: 0.0225 etc:Sat Jun 20 22:41:59 2020
+validating ... loss: nan
+GL:nan
+Epoch 82/100
+step:53600/66100 loss:nan imps:70.3 lr: 0.0223 etc:Sat Jun 20 22:42:13 2020
+step:53700/66100 loss:nan imps:76.3 lr: 0.0222 etc:Sat Jun 20 22:42:10 2020
+step:53800/66100 loss:nan imps:77.9 lr: 0.0220 etc:Sat Jun 20 22:42:08 2020
+step:53900/66100 loss:nan imps:78.5 lr: 0.0219 etc:Sat Jun 20 22:42:05 2020
+step:54000/66100 loss:nan imps:79.0 lr: 0.0217 etc:Sat Jun 20 22:42:03 2020
+step:54100/66100 loss:nan imps:79.2 lr: 0.0215 etc:Sat Jun 20 22:42:01 2020
+step:54200/66100 loss:nan imps:79.4 lr: 0.0214 etc:Sat Jun 20 22:41:58 2020
+validating ... loss: nan
+GL:nan
+Epoch 83/100
+step:54300/66100 loss:nan imps:74.1 lr: 0.0212 etc:Sat Jun 20 22:42:11 2020
+step:54400/66100 loss:nan imps:77.1 lr: 0.0210 etc:Sat Jun 20 22:42:09 2020
+step:54500/66100 loss:nan imps:78.2 lr: 0.0209 etc:Sat Jun 20 22:42:06 2020
+step:54600/66100 loss:nan imps:78.7 lr: 0.0207 etc:Sat Jun 20 22:42:04 2020
+step:54700/66100 loss:nan imps:79.1 lr: 0.0206 etc:Sat Jun 20 22:42:02 2020
+step:54800/66100 loss:nan imps:79.3 lr: 0.0204 etc:Sat Jun 20 22:41:59 2020
+validating ... loss: nan
+GL:nan
+Epoch 84/100
+step:54900/66100 loss:nan imps:67.3 lr: 0.0202 etc:Sat Jun 20 22:42:12 2020
+step:55000/66100 loss:nan imps:76.2 lr: 0.0201 etc:Sat Jun 20 22:42:10 2020
+step:55100/66100 loss:nan imps:77.9 lr: 0.0199 etc:Sat Jun 20 22:42:07 2020
+step:55200/66100 loss:nan imps:78.7 lr: 0.0197 etc:Sat Jun 20 22:42:05 2020
+step:55300/66100 loss:nan imps:79.1 lr: 0.0196 etc:Sat Jun 20 22:42:03 2020
+step:55400/66100 loss:nan imps:79.3 lr: 0.0194 etc:Sat Jun 20 22:42:00 2020
+step:55500/66100 loss:nan imps:79.5 lr: 0.0193 etc:Sat Jun 20 22:41:58 2020
+validating ... loss: nan
+GL:nan
+Epoch 85/100
+step:55600/66100 loss:nan imps:72.4 lr: 0.0191 etc:Sat Jun 20 22:42:11 2020
+step:55700/66100 loss:nan imps:76.6 lr: 0.0189 etc:Sat Jun 20 22:42:09 2020
+step:55800/66100 loss:nan imps:78.0 lr: 0.0188 etc:Sat Jun 20 22:42:06 2020
+step:55900/66100 loss:nan imps:78.7 lr: 0.0186 etc:Sat Jun 20 22:42:04 2020
+step:56000/66100 loss:nan imps:79.1 lr: 0.0184 etc:Sat Jun 20 22:42:02 2020
+step:56100/66100 loss:nan imps:79.3 lr: 0.0183 etc:Sat Jun 20 22:41:59 2020
+validating ... loss: nan
+GL:nan
+Epoch 86/100
+step:56200/66100 loss:nan imps:54.6 lr: 0.0181 etc:Sat Jun 20 22:42:12 2020
+step:56300/66100 loss:nan imps:75.6 lr: 0.0179 etc:Sat Jun 20 22:42:10 2020
+step:56400/66100 loss:nan imps:77.8 lr: 0.0178 etc:Sat Jun 20 22:42:07 2020
+step:56500/66100 loss:nan imps:78.6 lr: 0.0176 etc:Sat Jun 20 22:42:05 2020
+step:56600/66100 loss:nan imps:79.0 lr: 0.0174 etc:Sat Jun 20 22:42:03 2020
+step:56700/66100 loss:nan imps:79.3 lr: 0.0173 etc:Sat Jun 20 22:42:00 2020
+step:56800/66100 loss:nan imps:79.5 lr: 0.0171 etc:Sat Jun 20 22:41:58 2020
+validating ... loss: nan
+GL:nan
+Epoch 87/100
+step:56900/66100 loss:nan imps:69.7 lr: 0.0170 etc:Sat Jun 20 22:42:11 2020
+step:57000/66100 loss:nan imps:76.3 lr: 0.0168 etc:Sat Jun 20 22:42:09 2020
+step:57100/66100 loss:nan imps:78.0 lr: 0.0166 etc:Sat Jun 20 22:42:06 2020
+step:57200/66100 loss:nan imps:78.6 lr: 0.0165 etc:Sat Jun 20 22:42:04 2020
+step:57300/66100 loss:nan imps:79.0 lr: 0.0163 etc:Sat Jun 20 22:42:02 2020
+step:57400/66100 loss:nan imps:79.2 lr: 0.0161 etc:Sat Jun 20 22:42:00 2020
+step:57500/66100 loss:nan imps:79.4 lr: 0.0160 etc:Sat Jun 20 22:41:57 2020
+validating ... loss: nan
+GL:nan
+Epoch 88/100
+step:57600/66100 loss:nan imps:74.1 lr: 0.0158 etc:Sat Jun 20 22:42:10 2020
+step:57700/66100 loss:nan imps:77.3 lr: 0.0156 etc:Sat Jun 20 22:42:07 2020
+step:57800/66100 loss:nan imps:78.4 lr: 0.0155 etc:Sat Jun 20 22:42:05 2020
+step:57900/66100 loss:nan imps:78.8 lr: 0.0153 etc:Sat Jun 20 22:42:03 2020
+step:58000/66100 loss:nan imps:79.2 lr: 0.0151 etc:Sat Jun 20 22:42:01 2020
+step:58100/66100 loss:nan imps:79.4 lr: 0.0149 etc:Sat Jun 20 22:41:58 2020
+validating ... loss: nan
+GL:nan
+Epoch 89/100
+step:58200/66100 loss:nan imps:63.6 lr: 0.0148 etc:Sat Jun 20 22:42:11 2020
+step:58300/66100 loss:nan imps:75.6 lr: 0.0146 etc:Sat Jun 20 22:42:08 2020
+step:58400/66100 loss:nan imps:77.5 lr: 0.0144 etc:Sat Jun 20 22:42:06 2020
+step:58500/66100 loss:nan imps:78.4 lr: 0.0143 etc:Sat Jun 20 22:42:04 2020
+step:58600/66100 loss:nan imps:78.9 lr: 0.0141 etc:Sat Jun 20 22:42:02 2020
+step:58700/66100 loss:nan imps:79.1 lr: 0.0139 etc:Sat Jun 20 22:41:59 2020
+step:58800/66100 loss:nan imps:79.3 lr: 0.0138 etc:Sat Jun 20 22:41:57 2020
+validating ... loss: nan
+GL:nan
+Epoch 90/100
+step:58900/66100 loss:nan imps:72.7 lr: 0.0136 etc:Sat Jun 20 22:42:09 2020
+step:59000/66100 loss:nan imps:77.0 lr: 0.0134 etc:Sat Jun 20 22:42:07 2020
+step:59100/66100 loss:nan imps:78.1 lr: 0.0133 etc:Sat Jun 20 22:42:05 2020
+step:59200/66100 loss:nan imps:78.8 lr: 0.0131 etc:Sat Jun 20 22:42:03 2020
+step:59300/66100 loss:nan imps:79.1 lr: 0.0129 etc:Sat Jun 20 22:42:01 2020
+step:59400/66100 loss:nan imps:79.3 lr: 0.0127 etc:Sat Jun 20 22:41:58 2020
+validating ... loss: nan
+GL:nan
+Epoch 91/100
+step:59500/66100 loss:nan imps:44.5 lr: 0.0126 etc:Sat Jun 20 22:42:11 2020
+step:59600/66100 loss:nan imps:74.6 lr: 0.0124 etc:Sat Jun 20 22:42:08 2020
+step:59700/66100 loss:nan imps:77.3 lr: 0.0122 etc:Sat Jun 20 22:42:06 2020
+step:59800/66100 loss:nan imps:78.3 lr: 0.0121 etc:Sat Jun 20 22:42:04 2020
+step:59900/66100 loss:nan imps:78.9 lr: 0.0119 etc:Sat Jun 20 22:42:02 2020
+step:60000/66100 loss:nan imps:79.2 lr: 0.0117 etc:Sat Jun 20 22:42:00 2020
+step:60100/66100 loss:nan imps:79.4 lr: 0.0115 etc:Sat Jun 20 22:41:57 2020
+validating ... loss: nan
+GL:nan
+Epoch 92/100
+step:60200/66100 loss:nan imps:70.2 lr: 0.0114 etc:Sat Jun 20 22:42:09 2020
+step:60300/66100 loss:nan imps:76.7 lr: 0.0112 etc:Sat Jun 20 22:42:07 2020
+step:60400/66100 loss:nan imps:78.1 lr: 0.0110 etc:Sat Jun 20 22:42:05 2020
+step:60500/66100 loss:nan imps:78.7 lr: 0.0108 etc:Sat Jun 20 22:42:03 2020
+step:60600/66100 loss:nan imps:79.1 lr: 0.0107 etc:Sat Jun 20 22:42:00 2020
+step:60700/66100 loss:nan imps:79.3 lr: 0.0105 etc:Sat Jun 20 22:41:58 2020
+step:60800/66100 loss:nan imps:79.5 lr: 0.0103 etc:Sat Jun 20 22:41:56 2020
+validating ... loss: nan
+GL:nan
+Epoch 93/100
+step:60900/66100 loss:nan imps:73.3 lr: 0.0101 etc:Sat Jun 20 22:42:08 2020
+step:61000/66100 loss:nan imps:76.9 lr: 0.0100 etc:Sat Jun 20 22:42:06 2020
+step:61100/66100 loss:nan imps:78.1 lr: 0.0098 etc:Sat Jun 20 22:42:04 2020
+step:61200/66100 loss:nan imps:78.7 lr: 0.0096 etc:Sat Jun 20 22:42:02 2020
+step:61300/66100 loss:nan imps:79.0 lr: 0.0094 etc:Sat Jun 20 22:42:00 2020
+step:61400/66100 loss:nan imps:79.2 lr: 0.0093 etc:Sat Jun 20 22:41:57 2020
+validating ... loss: nan
+GL:nan
+Epoch 94/100
+step:61500/66100 loss:nan imps:62.5 lr: 0.0091 etc:Sat Jun 20 22:42:09 2020
+step:61600/66100 loss:nan imps:75.6 lr: 0.0089 etc:Sat Jun 20 22:42:07 2020
+step:61700/66100 loss:nan imps:77.6 lr: 0.0087 etc:Sat Jun 20 22:42:05 2020
+step:61800/66100 loss:nan imps:78.4 lr: 0.0085 etc:Sat Jun 20 22:42:03 2020
+step:61900/66100 loss:nan imps:78.9 lr: 0.0084 etc:Sat Jun 20 22:42:01 2020
+step:62000/66100 loss:nan imps:79.2 lr: 0.0082 etc:Sat Jun 20 22:41:59 2020
+step:62100/66100 loss:nan imps:79.3 lr: 0.0080 etc:Sat Jun 20 22:41:57 2020
+validating ... loss: nan
+GL:nan
+Epoch 95/100
+step:62200/66100 loss:nan imps:71.6 lr: 0.0078 etc:Sat Jun 20 22:42:08 2020
+step:62300/66100 loss:nan imps:76.5 lr: 0.0076 etc:Sat Jun 20 22:42:06 2020
+step:62400/66100 loss:nan imps:78.0 lr: 0.0075 etc:Sat Jun 20 22:42:04 2020
+step:62500/66100 loss:nan imps:78.7 lr: 0.0073 etc:Sat Jun 20 22:42:02 2020
+step:62600/66100 loss:nan imps:79.1 lr: 0.0071 etc:Sat Jun 20 22:42:00 2020
+step:62700/66100 loss:nan imps:79.4 lr: 0.0069 etc:Sat Jun 20 22:41:58 2020
+validating ... loss: nan
+GL:nan
+Epoch 96/100
+step:62800/66100 loss:nan imps:33.9 lr: 0.0067 etc:Sat Jun 20 22:42:09 2020
+step:62900/66100 loss:nan imps:74.7 lr: 0.0066 etc:Sat Jun 20 22:42:07 2020
+step:63000/66100 loss:nan imps:77.3 lr: 0.0064 etc:Sat Jun 20 22:42:05 2020
+step:63100/66100 loss:nan imps:78.4 lr: 0.0062 etc:Sat Jun 20 22:42:03 2020
+step:63200/66100 loss:nan imps:78.8 lr: 0.0060 etc:Sat Jun 20 22:42:01 2020
+step:63300/66100 loss:nan imps:79.1 lr: 0.0058 etc:Sat Jun 20 22:41:59 2020
+step:63400/66100 loss:nan imps:79.3 lr: 0.0056 etc:Sat Jun 20 22:41:57 2020
+validating ... loss: nan
+GL:nan
+Epoch 97/100
+step:63500/66100 loss:nan imps:68.2 lr: 0.0054 etc:Sat Jun 20 22:42:08 2020
+step:63600/66100 loss:nan imps:76.1 lr: 0.0052 etc:Sat Jun 20 22:42:06 2020
+step:63700/66100 loss:nan imps:77.8 lr: 0.0051 etc:Sat Jun 20 22:42:04 2020
+step:63800/66100 loss:nan imps:78.5 lr: 0.0049 etc:Sat Jun 20 22:42:02 2020
+step:63900/66100 loss:nan imps:78.9 lr: 0.0047 etc:Sat Jun 20 22:42:00 2020
+step:64000/66100 loss:nan imps:79.2 lr: 0.0045 etc:Sat Jun 20 22:41:58 2020
+step:64100/66100 loss:nan imps:79.4 lr: 0.0043 etc:Sat Jun 20 22:41:56 2020
+validating ... loss: nan
+GL:nan
+Epoch 98/100
+step:64200/66100 loss:nan imps:73.1 lr: 0.0041 etc:Sat Jun 20 22:42:07 2020
+step:64300/66100 loss:nan imps:76.7 lr: 0.0039 etc:Sat Jun 20 22:42:05 2020
+step:64400/66100 loss:nan imps:78.0 lr: 0.0037 etc:Sat Jun 20 22:42:03 2020
+step:64500/66100 loss:nan imps:78.6 lr: 0.0035 etc:Sat Jun 20 22:42:01 2020
+step:64600/66100 loss:nan imps:78.9 lr: 0.0033 etc:Sat Jun 20 22:41:59 2020
+step:64700/66100 loss:nan imps:79.2 lr: 0.0031 etc:Sat Jun 20 22:41:57 2020
+validating ... loss: nan
+GL:nan
+Epoch 99/100
+step:64800/66100 loss:nan imps:59.8 lr: 0.0029 etc:Sat Jun 20 22:42:08 2020
+step:64900/66100 loss:nan imps:75.7 lr: 0.0027 etc:Sat Jun 20 22:42:06 2020
+step:65000/66100 loss:nan imps:77.7 lr: 0.0025 etc:Sat Jun 20 22:42:04 2020
+step:65100/66100 loss:nan imps:78.5 lr: 0.0023 etc:Sat Jun 20 22:42:02 2020
+step:65200/66100 loss:nan imps:79.0 lr: 0.0021 etc:Sat Jun 20 22:42:00 2020
+step:65300/66100 loss:nan imps:79.2 lr: 0.0019 etc:Sat Jun 20 22:41:58 2020
+step:65400/66100 loss:nan imps:79.4 lr: 0.0017 etc:Sat Jun 20 22:41:56 2020
+validating ... loss: nan
+GL:nan
+Epoch 100/100
+step:65500/66100 loss:nan imps:71.3 lr: 0.0015 etc:Sat Jun 20 22:42:07 2020
+step:65600/66100 loss:nan imps:76.7 lr: 0.0012 etc:Sat Jun 20 22:42:05 2020
+step:65700/66100 loss:nan imps:78.1 lr: 0.0010 etc:Sat Jun 20 22:42:03 2020
+step:65800/66100 loss:nan imps:78.7 lr: 0.0008 etc:Sat Jun 20 22:42:01 2020
+step:65900/66100 loss:nan imps:79.1 lr: 0.0005 etc:Sat Jun 20 22:41:59 2020
+step:66000/66100 loss:nan imps:79.3 lr: 0.0003 etc:Sat Jun 20 22:41:57 2020
+validating ... loss: nan
+GL:nan
+step.make_cam: Sat Jun 20 22:42:07 2020
+[ ]
+step.eval_cam: Sat Jun 20 22:54:18 2020
