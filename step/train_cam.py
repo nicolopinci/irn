@@ -76,6 +76,8 @@ def run(args):
     
     ep = 0
     ep_max = args.cam_num_epoches
+    
+    training_vec = []
    
 
     while(ep < ep_max and early_stop_now is False):
@@ -93,6 +95,8 @@ def run(args):
             loss = F.multilabel_soft_margin_loss(x, label)
 
             avg_meter.add({'loss1': loss.item()})
+            
+            current_train_loss = 0
 
             optimizer.zero_grad()
             loss.backward()
@@ -100,9 +104,12 @@ def run(args):
 
             if (optimizer.global_step-1)%100 == 0:
                 timer.update_progress(optimizer.global_step / max_step)
+                
+                current_train_loss = avg_meter.pop('loss1')
+                training_vec.append(current_train_loss)
 
                 print('step:%5d/%5d' % (optimizer.global_step - 1, max_step),
-                      'loss:%.4f' % (avg_meter.pop('loss1')),
+                      'loss:%.4f' % (current_train_loss),
                       'imps:%.1f' % ((step + 1) * args.cam_batch_size / timer.get_stage_elapsed()),
                       'lr: %.4f' % (optimizer.param_groups[0]['lr']),
                       'etc:%s' % (timer.str_estimated_complete()), flush=True)
@@ -115,11 +122,18 @@ def run(args):
             optimal_validation_loss = new_validation_loss
             
         GL_value = calculateGL(optimal_validation_loss, new_validation_loss)
+        Pk_value = calculatePk(training_vec, args.stopping_k)
+        PQ_value = calculatePQ(GL_value, Pk_value)
         
         print('GL:%.1f' % GL_value)
+        print('P(k):%.2f' % Pk_value)
+        print('PQ:%.2f' % PQ_value)
         
-        if(GL_value > args.stopping_threshold):
-            early_stop_now = True       
+        if(args.stopping_criteria == "threshold" and GL_value > args.stopping_threshold):
+            early_stop_now = True
+            
+        if(args.stopping_criteria == "strip" and PQ_value > args.stopping_threshold):
+            early_stop_now = True
             
         ep += 1 
         
@@ -135,3 +149,23 @@ def run(args):
     
 def calculateGL(Eopt, Eva):
     return 100*(Eva/Eopt - 1)
+
+def calculatePk(training_vec, k):
+    num = 0.0
+    den = float('inf')
+    min_tv = float('inf')
+    last_position = len(training_vec)
+    initial_position = max(last_position - k, 0)
+    
+    for i in range(initial_position, last_position):
+        num = num + training_vec[i]
+        if(min_tv > training_vec[i]):
+            min_tv = training_vec[i]
+            
+    den = k*min_tv
+    
+    return 1000*(num/den-1.0)
+
+
+def calculatePQ(GL, Pk):
+    return GL/Pk
