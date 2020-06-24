@@ -4116,3 +4116,20 @@ Early stopping activated
 step.make_cam: Tue Jun 23 20:15:58 2020
 [ ]
 step.eval_cam: Tue Jun 23 20:28:23 2020
+
+
+
+{'num_workers': 16, 'voc12_root': 'voc12', 'train_list': 'voc12/train_aug.txt', 'val_list': 'voc12/val.txt', 'infer_list': 'voc12/train.txt', 'chainer_eval_set': 'train', 'cam_network': 'net.resnet50_cam', 'cam_crop_size': 512, 'cam_batch_size': 16, 'cam_num_epoches': 10, 'cam_learning_rate': 0.1, 'cam_weight_decay': 0.0001, 'cam_eval_thres': 0.15, 'cam_scales': (1.0, 0.5, 1.5, 2.0), 'conf_fg_thres': 0.3, 'conf_bg_thres': 0.05, 'irn_network': 'net.resnet50_irn', 'irn_crop_size': 512, 'irn_batch_size': 32, 'irn_num_epoches': 3, 'irn_learning_rate': 0.1, 'irn_weight_decay': 0.0001, 'beta': 10, 'exp_times': 8, 'ins_seg_bg_thres': 0.25, 'sem_seg_bg_thres': 0.25, 'log_name': 'sample_train_eval', 'cam_weights_name': 'sess/res50_cam.pth', 'irn_weights_name': 'sess/res50_irn.pth', 'cam_out_dir': 'result/cam', 'ir_label_out_dir': 'result/ir_label', 'sem_seg_out_dir': 'result/sem_seg', 'ins_seg_out_dir': 'result/ins_seg', 'train_cam_pass': True, 'make_cam_pass': True, 'eval_cam_pass': True, 'cam_to_ir_label_pass': True, 'train_irn_pass': True, 'make_ins_seg_pass': True, 'eval_ins_seg_pass': True, 'make_sem_seg_pass': True, 'eval_sem_seg_pass': True, 'stopping_criterion': 'onlyPk', 'stopping_threshold': 1.5, 'stopping_k': 7}
+step.train_cam: Wed Jun 24 09:15:22 2020
+Epoch 1/10
+step:    0/ 6610 loss:0.6779 imps:4.0 lr: 0.1000 etc:Wed Jun 24 16:32:57 2020
+step:  100/ 6610 loss:0.1871 imps:67.9 lr: 0.0986 etc:Wed Jun 24 09:41:29 2020
+step:  200/ 6610 loss:0.1127 imps:73.7 lr: 0.0973 etc:Wed Jun 24 09:39:26 2020
+step:  300/ 6610 loss:0.0999 imps:75.7 lr: 0.0959 etc:Wed Jun 24 09:38:48 2020
+step:  400/ 6610 loss:0.0919 imps:76.6 lr: 0.0945 etc:Wed Jun 24 09:38:31 2020
+step:  500/ 6610 loss:0.0858 imps:77.1 lr: 0.0932 etc:Wed Jun 24 09:38:22 2020
+step:  600/ 6610 loss:0.0841 imps:77.5 lr: 0.0918 etc:Wed Jun 24 09:38:16 2020
+validating ... loss: 0.0689
+GL:0.0
+P(k):1274.82
+PQ:0.00

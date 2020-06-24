@@ -135,7 +135,7 @@ def run(args):
         if(args.stopping_criterion == "strip" and PQ_value > args.stopping_threshold):
             early_stop_now = True
             
-        if(args.stopping_criterion == "onlyPk" and 100/Pk_value > args.stopping_treshold):
+        if(args.stopping_criterion == "onlyPk" and 100/Pk_value > args.stopping_threshold):
             early_stop_now = True
             
         ep += 1 
