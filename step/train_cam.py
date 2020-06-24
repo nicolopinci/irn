@@ -129,10 +129,13 @@ def run(args):
         print('P(k):%.2f' % Pk_value)
         print('PQ:%.2f' % PQ_value)
         
-        if(args.stopping_criteria == "threshold" and GL_value > args.stopping_threshold):
+        if(args.stopping_criterion == "threshold" and GL_value > args.stopping_threshold):
             early_stop_now = True
             
-        if(args.stopping_criteria == "strip" and PQ_value > args.stopping_threshold):
+        if(args.stopping_criterion == "strip" and PQ_value > args.stopping_threshold):
+            early_stop_now = True
+            
+        if(args.stopping_criterion == "onlyPk" and 100/Pk_value > args.stopping_treshold):
             early_stop_now = True
             
         ep += 1 

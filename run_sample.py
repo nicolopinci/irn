@@ -73,9 +73,9 @@ if __name__ == '__main__':
 
     
     #Early stopping
-    parser.add_argument("--stopping_criteria", default="threshold", type=str)
-    parser.add_argument("--stopping_threshold", default=5.0, type=float)
-    parser.add_argument("--stopping_k", default=10, type=int)
+    parser.add_argument("--stopping_criterion", default="threshold", type=str)
+    parser.add_argument("--stopping_threshold", default=0.0, type=float)
+    parser.add_argument("--stopping_k", default=1, type=int)
 
     
     args = parser.parse_args()
